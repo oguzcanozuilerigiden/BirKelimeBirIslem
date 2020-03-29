@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseKart));
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseKart));
             DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem2 = new DevExpress.Utils.ToolTipSeparatorItem();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
@@ -92,15 +92,15 @@
             // 
             this.btnIslem.Caption = "İşlem Oyunu";
             this.btnIslem.Id = 1;
-            this.btnIslem.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.autosum_16x16;
-            this.btnIslem.ImageOptions.LargeImage = global::BirKelimeBirIslem.UI.Win.Properties.Resources.autosum_32x32;
+            this.btnIslem.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.summary_16x16;
+            this.btnIslem.ImageOptions.LargeImage = global::BirKelimeBirIslem.UI.Win.Properties.Resources.summary_32x32;
             this.btnIslem.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I));
             this.btnIslem.Name = "btnIslem";
-            toolTipTitleItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            toolTipTitleItem1.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.comment_16x16;
             toolTipTitleItem1.Text = "(Ctrl + I)";
             toolTipItem1.LeftIndent = 6;
             toolTipItem1.Text = "İşlem Oyunu";
-            toolTipTitleItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            toolTipTitleItem2.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.suggestion_16x16;
             toolTipTitleItem2.LeftIndent = 6;
             toolTipTitleItem2.Text = "İşlem Oyununu Açar.";
             superToolTip1.Items.Add(toolTipTitleItem1);
@@ -113,15 +113,15 @@
             // 
             this.btn_Kelime.Caption = "Kelime Oyunu";
             this.btn_Kelime.Id = 2;
-            this.btn_Kelime.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.modifystyle_16x16;
-            this.btn_Kelime.ImageOptions.LargeImage = global::BirKelimeBirIslem.UI.Win.Properties.Resources.modifystyle_32x32;
+            this.btn_Kelime.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.snaptogglefieldhighlighting_16x16;
+            this.btn_Kelime.ImageOptions.LargeImage = global::BirKelimeBirIslem.UI.Win.Properties.Resources.snaptogglefieldhighlighting_32x32;
             this.btn_Kelime.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K));
             this.btn_Kelime.Name = "btn_Kelime";
-            toolTipTitleItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            toolTipTitleItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             toolTipTitleItem3.Text = "(Ctrl + K)";
             toolTipItem2.LeftIndent = 6;
             toolTipItem2.Text = "Kelime Oyunu";
-            toolTipTitleItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            toolTipTitleItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             toolTipTitleItem4.LeftIndent = 6;
             toolTipTitleItem4.Text = "Kelime Oyununu Açar.";
             superToolTip2.Items.Add(toolTipTitleItem3);
@@ -134,15 +134,15 @@
             // 
             this.btnCikis.Caption = "Çıkış";
             this.btnCikis.Id = 3;
-            this.btnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.ImageOptions.Image")));
-            this.btnCikis.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCikis.ImageOptions.LargeImage")));
+            this.btnCikis.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.close_16x16;
+            this.btnCikis.ImageOptions.LargeImage = global::BirKelimeBirIslem.UI.Win.Properties.Resources.close_32x32;
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.ShortcutKeyDisplayString = "Esc";
-            toolTipTitleItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            toolTipTitleItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             toolTipTitleItem5.Text = "(Esc)";
             toolTipItem3.LeftIndent = 6;
             toolTipItem3.Text = "Çıkış";
-            toolTipTitleItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            toolTipTitleItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             toolTipTitleItem6.LeftIndent = 6;
             toolTipTitleItem6.Text = "Programı Kapatır.";
             superToolTip3.Items.Add(toolTipTitleItem5);
