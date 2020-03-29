@@ -134,15 +134,15 @@
             // 
             this.btnCikis.Caption = "Çıkış";
             this.btnCikis.Id = 3;
-            this.btnCikis.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.close_16x16;
-            this.btnCikis.ImageOptions.LargeImage = global::BirKelimeBirIslem.UI.Win.Properties.Resources.close_32x32;
+            this.btnCikis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.ImageOptions.Image")));
+            this.btnCikis.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCikis.ImageOptions.LargeImage")));
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.ShortcutKeyDisplayString = "Esc";
-            toolTipTitleItem5.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.comment_16x16;
+            toolTipTitleItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             toolTipTitleItem5.Text = "(Esc)";
             toolTipItem3.LeftIndent = 6;
             toolTipItem3.Text = "Çıkış";
-            toolTipTitleItem6.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.suggestion_16x16;
+            toolTipTitleItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             toolTipTitleItem6.LeftIndent = 6;
             toolTipTitleItem6.Text = "Programı Kapatır.";
             superToolTip3.Items.Add(toolTipTitleItem5);
@@ -186,6 +186,7 @@
             // pictureEdit1
             // 
             this.pictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureEdit1.Location = new System.Drawing.Point(532, 118);
             this.pictureEdit1.MenuManager = this.ribbonControl;
