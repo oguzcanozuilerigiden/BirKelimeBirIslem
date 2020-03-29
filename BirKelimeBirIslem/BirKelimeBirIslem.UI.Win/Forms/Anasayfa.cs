@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace BirKelimeBirIslem.UI.Win.Forms.BaseForm
+
+namespace BirKelimeBirIslem.UI.Win.Forms
 {
-    public partial class BaseKart : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class Anasayfa : DevExpress.XtraEditors.XtraForm
     {
-        public BaseKart()
+        public Anasayfa()
         {
             InitializeComponent();
         }

@@ -51,11 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\BaseForm\BaseKart.cs">
+    <Compile Include="Forms\Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BaseForm\BaseKart.Designer.cs">
-      <DependentUpon>BaseKart.cs</DependentUpon>
+    <Compile Include="Forms\Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\IslemForm\IslemKarti.cs">
       <SubType>Form</SubType>
@@ -71,8 +77,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\BaseForm\BaseKart.resx">
-      <DependentUpon>BaseKart.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BaseForms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -99,6 +105,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\backgroung.jpg" />
+    <Content Include="Images\logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
