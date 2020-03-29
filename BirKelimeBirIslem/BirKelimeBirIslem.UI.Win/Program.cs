@@ -16,7 +16,7 @@ namespace BirKelimeBirIslem.UI.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new BaseKart());
+            Application.Run(new Form1());
         }
     }
 }
