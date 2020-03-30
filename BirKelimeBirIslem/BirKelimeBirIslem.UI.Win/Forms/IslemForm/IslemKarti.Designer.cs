@@ -28,9 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // IslemKarti
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "IslemKarti";
+            this.ClientSize = new System.Drawing.Size(898, 368);
+            this.IconOptions.ShowIcon = false;
+            this.MaximumSize = new System.Drawing.Size(1200, 700);
+            this.Name = "IslemKarti";
+            this.Text = "İşlem Kartı";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

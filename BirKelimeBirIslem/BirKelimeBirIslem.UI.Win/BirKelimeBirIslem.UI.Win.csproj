@@ -38,6 +38,7 @@
     <Reference Include="DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,8 +72,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Controls\MyDataLayoutControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyLabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyListBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyPictureEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\Controls\MyToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="Forms\Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IslemForm\IslemKarti.resx">
+      <DependentUpon>IslemKarti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

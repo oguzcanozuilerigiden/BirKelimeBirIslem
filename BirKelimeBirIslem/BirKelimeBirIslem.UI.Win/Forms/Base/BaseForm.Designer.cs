@@ -29,22 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.myPictureEdit1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyPictureEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureEdit1
+            // myPictureEdit1
             // 
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(12, 12);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(289, 61);
-            this.pictureEdit1.TabIndex = 0;
+            this.myPictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.myPictureEdit1.EditValue = ((object)(resources.GetObject("myPictureEdit1.EditValue")));
+            this.myPictureEdit1.EnterMoveNextControl = true;
+            this.myPictureEdit1.Location = new System.Drawing.Point(12, 12);
+            this.myPictureEdit1.Name = "myPictureEdit1";
+            this.myPictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.myPictureEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.myPictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.myPictureEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.myPictureEdit1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
+            this.myPictureEdit1.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.myPictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.myPictureEdit1.Properties.NullText = "Resim Yok";
+            this.myPictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.myPictureEdit1.Properties.ShowMenu = false;
+            this.myPictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.myPictureEdit1.Size = new System.Drawing.Size(310, 54);
+            this.myPictureEdit1.TabIndex = 0;
             // 
             // BaseForm
             // 
@@ -53,7 +61,7 @@
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
             this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
             this.ClientSize = new System.Drawing.Size(898, 368);
-            this.Controls.Add(this.pictureEdit1);
+            this.Controls.Add(this.myPictureEdit1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.ShowIcon = false;
             this.MaximizeBox = false;
@@ -62,13 +70,13 @@
             this.MinimumSize = new System.Drawing.Size(900, 400);
             this.Name = "BaseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private UserControls.Controls.MyPictureEdit myPictureEdit1;
     }
 }
