@@ -64,7 +64,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             {
                 //9 satır + 1 satır
                 grp.OptionsTableLayoutGroup.RowDefinitions.Add(new RowDefinition
-                {
+                {                    
                     SizeType = SizeType.Absolute,
                     Height = 50
                 });
