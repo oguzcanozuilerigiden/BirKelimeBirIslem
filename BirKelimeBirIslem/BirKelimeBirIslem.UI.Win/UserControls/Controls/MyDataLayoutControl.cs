@@ -38,6 +38,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
 
             return item;
         }
+
         public override LayoutGroup CreateLayoutGroup(LayoutGroup parent)
         {
             var grp = base.CreateLayoutGroup(parent);
@@ -55,7 +56,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
 
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Percent, Width = 100 });//Yeni sütun ekle
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
-
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
             //Satır İşlemleri
             grp.OptionsTableLayoutGroup.RowDefinitions.Clear();//Satırları Temizler
 
@@ -67,7 +68,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
                     SizeType = SizeType.Absolute,
                     Height = 50
                 });
-                if (i + 1 != 9) continue;
+                if (i + 1 != 3) continue;
                 grp.OptionsTableLayoutGroup.RowDefinitions.Add(new RowDefinition
                 {
                     SizeType = SizeType.Percent,
@@ -76,6 +77,6 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             }
 
             return grp;
-        }
+        }        
     }
 }
