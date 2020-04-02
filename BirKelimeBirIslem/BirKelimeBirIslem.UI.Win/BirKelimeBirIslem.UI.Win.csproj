@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Hesaplama.cs" />
+    <Compile Include="Classes\SayiOyun.cs" />
     <Compile Include="Forms\Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,9 +124,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Images\backgroung.jpg" />
     <Content Include="Images\logo.jpg" />
