@@ -52,8 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Hesaplama.cs" />
-    <Compile Include="Classes\SayiOyun.cs" />
+    <Compile Include="Classes\Islem\Denklem.cs" />
+    <Compile Include="Classes\Islem\Enums\Enum.cs" />
+    <Compile Include="Classes\Islem\Oyun.cs" />
+    <Compile Include="Classes\Islem\Oyuncu.cs" />
     <Compile Include="Forms\Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
