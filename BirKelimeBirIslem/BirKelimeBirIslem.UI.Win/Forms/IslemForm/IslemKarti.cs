@@ -14,7 +14,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
         Oyun oyun;
         private void IslemKarti_Load(object sender, System.EventArgs e)
         {
-            tglVeriGiris.IsOn = false;
+
         }
         private void btnSayiOlustur_Click(object sender, EventArgs e)
         {
@@ -29,8 +29,9 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
             txtSayi6.Text = oyun.IkiBasamakli.ToString();
             lblHedef.Text = oyun.HedefSayi.ToString();
         }
+
         private void btnBasla_Click(object sender, System.EventArgs e)
-        {           
+        {
             oyun.TekBasamakli[0] = Convert.ToInt32(txtSayi1.Text);
             oyun.TekBasamakli[1] = Convert.ToInt32(txtSayi2.Text);
             oyun.TekBasamakli[2] = Convert.ToInt32(txtSayi3.Text);
@@ -39,24 +40,15 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
             oyun.IkiBasamakli = Convert.ToInt32(txtSayi6.Text);
             oyun.HedefSayi = Convert.ToInt32(lblHedef.Text);
 
-            var ifd= oyun.Basla();
+            var ifd = oyun.Basla();
             int adet = ifd.ToString().ToCharArray().Count(c => c == '=');
             lstIslemler.ItemHeight = (adet + 1) * 15;
             lstIslemler.Items.Add(ifd.ToString());
         }
 
-        private void tglVeriGiris_Toggled(object sender, EventArgs e)
+        private void tglSayiGiris_Toggled(object sender, EventArgs e)
         {
-            if(tglVeriGiris.IsOn)
-            {
-                txtSayi1.ReadOnly = true;
-                txtSayi2.ReadOnly = true;
-                txtSayi3.ReadOnly = true;
-                txtSayi4.ReadOnly = true;
-                txtSayi5.ReadOnly = true;
-                txtSayi6.ReadOnly = true;
-            }
-            else
+            if (tglSayiGiris.IsOn)
             {
                 txtSayi1.ReadOnly = false;
                 txtSayi2.ReadOnly = false;
@@ -64,6 +56,17 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
                 txtSayi4.ReadOnly = false;
                 txtSayi5.ReadOnly = false;
                 txtSayi6.ReadOnly = false;
+                btnSayiOlustur.Enabled = false;
+            }
+            else
+            {
+                txtSayi1.ReadOnly = true;
+                txtSayi2.ReadOnly = true;
+                txtSayi3.ReadOnly = true;
+                txtSayi4.ReadOnly = true;
+                txtSayi5.ReadOnly = true;
+                txtSayi6.ReadOnly = true;
+                btnSayiOlustur.Enabled = true;
             }
         }
     }

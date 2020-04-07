@@ -5,6 +5,7 @@ using DevExpress.XtraLayout;
 using DevExpress.XtraLayout.Utils;
 using System.Windows.Forms;
 using DevExpress.Utils;
+using DevExpress.XtraPrinting.Export.Pdf;
 
 namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
 {
@@ -15,10 +16,17 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
         public MyDataLayoutControl()
         {
             OptionsFocus.EnableAutoTabOrder = false;
+            BackColor = Color.Transparent;
+            //Appearance.Control.ForeColor = Color.Maroon;
+            //Appearance.Control.TextOptions.HAlignment = HorzAlignment.Center;            
+            //Appearance.Control.Font = new Font(new FontFamily("Tahoma"), 12f, FontStyle.Bold);
+            //Appearance.Control.TextOptions.VAlignment = VertAlignment.Top;
+            //Appearance.Control.BorderColor = Color.Black;
         }
+        public override string Text { get => base.Text; set => base.Text = value; }
         protected override LayoutControlImplementor CreateILayoutControlImplementorCore()
         {
-            return new MyLayoutControlImplementor(this);
+            return new MyLayoutControlImplementor(this);            
         }
     }
 
@@ -31,9 +39,9 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
         public override BaseLayoutItem CreateLayoutItem(LayoutGroup parent)
         {
             var item = base.CreateLayoutItem(parent);
-            item.AppearanceItemCaption.ForeColor = Color.Maroon;
             item.TextLocation = Locations.Top;
-            item.AppearanceItemCaption.TextOptions.HAlignment = HorzAlignment.Center;
+            item.AppearanceItemCaption.ForeColor = Color.Maroon;
+            item.AppearanceItemCaption.TextOptions.HAlignment = HorzAlignment.Center;            
             item.AppearanceItemCaption.Font = new Font(new FontFamily("Tahoma"), 12f, FontStyle.Bold);
 
             return item;
@@ -43,7 +51,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
         {
             var grp = base.CreateLayoutGroup(parent);
             grp.LayoutMode = LayoutMode.Table;
-
+            
             grp.OptionsTableLayoutGroup.ColumnDefinitions[0].SizeType = SizeType.Absolute;//0. Sütunu Sabit Yap
             grp.OptionsTableLayoutGroup.ColumnDefinitions[0].Width = 100;
 
@@ -55,7 +63,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
 
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Percent, Width = 100 });//Yeni sütun ekle
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Percent,  Width = 100 });//Yeni sütun ekle
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
             //Satır İşlemleri
@@ -65,7 +73,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             {
                 //9 satır + 1 satır
                 grp.OptionsTableLayoutGroup.RowDefinitions.Add(new RowDefinition
-                {                    
+                {                   
                     SizeType = SizeType.Absolute,
                     Height = 50
                 });
@@ -78,6 +86,6 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             }
 
             return grp;
-        }        
+        }
     }
 }

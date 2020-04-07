@@ -16,7 +16,11 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             Properties.AutoHeight = false;
             Properties.AutoWidth = true;
             Properties.GlyphAlignment = HorzAlignment.Far;
-            Properties.Appearance.ForeColor = Color.Maroon;
+            Properties.Appearance.ForeColor = Color.Maroon;            
+            //Properties.GlyphAlignment = HorzAlignment.Center;
+            //Properties.GlyphVAlignment = VertAlignment.Center;
+            Properties.Appearance.Font = new Font(new FontFamily("Tahoma"), 8.25f, FontStyle.Italic);
+            IsOn = false;
         }
 
         public override bool EnterMoveNextControl { get; set; } = true;
