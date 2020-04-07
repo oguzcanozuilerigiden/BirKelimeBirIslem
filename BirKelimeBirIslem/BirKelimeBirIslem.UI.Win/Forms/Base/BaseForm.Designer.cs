@@ -30,7 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
             this.myPictureEdit1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyPictureEdit();
+            this.stackPanel1 = new DevExpress.Utils.Layout.StackPanel();
             ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stackPanel1)).BeginInit();
+            this.stackPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // myPictureEdit1
@@ -38,7 +41,7 @@
             this.myPictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
             this.myPictureEdit1.EditValue = ((object)(resources.GetObject("myPictureEdit1.EditValue")));
             this.myPictureEdit1.EnterMoveNextControl = true;
-            this.myPictureEdit1.Location = new System.Drawing.Point(12, 12);
+            this.myPictureEdit1.Location = new System.Drawing.Point(3, 19);
             this.myPictureEdit1.Name = "myPictureEdit1";
             this.myPictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.myPictureEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -54,6 +57,17 @@
             this.myPictureEdit1.Size = new System.Drawing.Size(310, 54);
             this.myPictureEdit1.TabIndex = 0;
             // 
+            // stackPanel1
+            // 
+            this.stackPanel1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.stackPanel1.Appearance.Options.UseBackColor = true;
+            this.stackPanel1.Controls.Add(this.myPictureEdit1);
+            this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.stackPanel1.Location = new System.Drawing.Point(0, 0);
+            this.stackPanel1.Name = "stackPanel1";
+            this.stackPanel1.Size = new System.Drawing.Size(898, 92);
+            this.stackPanel1.TabIndex = 1;
+            // 
             // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -61,7 +75,7 @@
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
             this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
             this.ClientSize = new System.Drawing.Size(898, 368);
-            this.Controls.Add(this.myPictureEdit1);
+            this.Controls.Add(this.stackPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.ShowIcon = false;
             this.MaximizeBox = false;
@@ -71,6 +85,8 @@
             this.Name = "BaseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.myPictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stackPanel1)).EndInit();
+            this.stackPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -78,5 +94,6 @@
         #endregion
 
         private UserControls.Controls.MyPictureEdit myPictureEdit1;
+        private DevExpress.Utils.Layout.StackPanel stackPanel1;
     }
 }
