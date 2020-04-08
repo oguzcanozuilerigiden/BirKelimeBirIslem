@@ -12,7 +12,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
             InitializeComponent();
         }
 
-        Oyun oyun;
+        OyunAyarlari oyun;
         private DateTime _startTime = DateTime.Now; // Set the starting time
         private TimeSpan _timeSpan = new TimeSpan(0, 1, 0);  // 1 minute 10 seconds as total time
         System.Diagnostics.Stopwatch st = new System.Diagnostics.Stopwatch();
@@ -37,7 +37,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
         {
             try
             {
-                oyun = new Oyun();
+                oyun = new OyunAyarlari();
                 lstIslemler.Items.Clear();
 
                 txtSayi1.Text = oyun.TekBasamakli[0].ToString();

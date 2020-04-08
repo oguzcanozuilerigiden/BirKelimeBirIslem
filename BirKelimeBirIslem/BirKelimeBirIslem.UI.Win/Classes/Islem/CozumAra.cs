@@ -5,21 +5,21 @@ using static BirKelimeBirIslem.UI.Win.Classes.Islem.Enums.Enum;
 
 namespace BirKelimeBirIslem.UI.Win.Classes
 {
-    class Oyuncu
+    class CozumAra
     {
         #region Properties
         public List<int> TumSayilar { get; private set; }
 
         public int Hedef2 { get; private set; }
 
-        private Denklem Denklem { get; set; }
+        private Hesapla Hesapla { get; set; }
 
         private int enYakin = int.MaxValue;
 
         #endregion Properties
 
         #region Constructor
-        public Oyuncu(int _hedef, List<int> _tekbasamakli, int _ikibasamakli)
+        public CozumAra(int _hedef, List<int> _tekbasamakli, int _ikibasamakli)
         {
             TumSayilar = new List<int>();
 
@@ -35,7 +35,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         {
             for (int i = 0; i < TumSayilar.Count; i++)
             {
-                Denklem _denklem = new Denklem(TumSayilar[i]);
+                Hesapla _denklem = new Hesapla(TumSayilar[i]);
                 List<int> arttikliste = KisaListeOlustur(TumSayilar, i);
                 if (CozumAra(_denklem, arttikliste))
                     break;
@@ -51,7 +51,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
             return yeniliste;
         }
 
-        private bool CozumAra(Denklem _denklembaslangici, List<int> _artikliste)
+        private bool CozumAra(Hesapla _denklembaslangici, List<int> _artikliste)
         {
             for (int i = 0; i < _artikliste.Count; i++)
             {
@@ -66,14 +66,14 @@ namespace BirKelimeBirIslem.UI.Win.Classes
             return false;
         }
 
-        private bool CozumeKartiEkle(int _siradakisayi, Islem_Isaret _islem, Denklem _denklembaslangici, List<int> _artikliste)
+        private bool CozumeKartiEkle(int _siradakisayi, Islem_Isaret _islem, Hesapla _denklembaslangici, List<int> _artikliste)
         {
-            Denklem denklem = new Denklem(_denklembaslangici, _islem, _siradakisayi);
+            Hesapla denklem = new Hesapla(_denklembaslangici, _islem, _siradakisayi);
 
             if (Math.Abs(Hedef2 - denklem.DegerHesapla) <= enYakin)
             {
                 enYakin = Math.Abs(Hedef2 - denklem.DegerHesapla);
-                this.Denklem = denklem;
+                this.Hesapla = denklem;
                 if (denklem.DegerHesapla == Hedef2) return true;
             }
 
@@ -90,9 +90,9 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append(this.Denklem.ToString());
+            sb.Append(this.Hesapla.ToString());
 
-            int fark = Math.Abs(this.Denklem.DegerHesapla - Hedef2);
+            int fark = Math.Abs(this.Hesapla.DegerHesapla - Hedef2);
             string puan;
             switch (fark)
             {

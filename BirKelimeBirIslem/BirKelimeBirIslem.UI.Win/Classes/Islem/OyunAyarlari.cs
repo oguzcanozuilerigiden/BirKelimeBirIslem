@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BirKelimeBirIslem.UI.Win.Classes
 {
-    class Oyun
+    class OyunAyarlari
     {
         #region Properties
         Random rnd { get; set; }
@@ -15,11 +15,11 @@ namespace BirKelimeBirIslem.UI.Win.Classes
 
         public int HedefSayi { get; set; }
 
-        Oyuncu Oyuncu { get; set; }
+        CozumAra CozumAra { get; set; }
         #endregion Properties
 
         #region Constructor
-        public Oyun()
+        public OyunAyarlari()
         {
             rnd = new Random();
             if (TekBasamakli != null) TekBasamakli.Clear();
@@ -31,10 +31,10 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #endregion        
 
         #region Functions
-        public Oyuncu Basla()
+        public CozumAra Basla()
         {
-            this.Oyuncu = new Oyuncu(HedefSayi, TekBasamakli, IkiBasamakli);
-            return Oyuncu;
+            this.CozumAra = new CozumAra(HedefSayi, TekBasamakli, IkiBasamakli);
+            return CozumAra;
         }
         #endregion
 
@@ -67,7 +67,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append(Oyuncu);
+            sb.Append(CozumAra);
             return sb.ToString();
         }
         #endregion ToString

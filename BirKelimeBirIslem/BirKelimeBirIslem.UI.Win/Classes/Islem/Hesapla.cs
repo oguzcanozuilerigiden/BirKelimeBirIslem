@@ -5,7 +5,7 @@ using static BirKelimeBirIslem.UI.Win.Classes.Islem.Enums.Enum;
 
 namespace BirKelimeBirIslem.UI.Win.Classes
 {
-    class Denklem
+    class Hesapla
     {
         #region Properties
         private List<int> SiradakiSayi { get; set; }
@@ -41,13 +41,13 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #endregion Properties
 
         #region Constructors
-        public Denklem(int _siradaki_sayi)
+        public Hesapla(int _siradaki_sayi)
         {
             this.SiradakiSayi = new List<int>() { _siradaki_sayi };
             this.Operatorler = new List<Islem_Isaret>();
         }
 
-        public Denklem(Denklem _denklembaslangici, Islem_Isaret _islem, int _siradakisayi)
+        public Hesapla(Hesapla _denklembaslangici, Islem_Isaret _islem, int _siradakisayi)
         {
             this.SiradakiSayi = new List<int>((int[])_denklembaslangici.SiradakiSayi.ToArray().Clone());
             this.SiradakiSayi.Add(_siradakisayi);
