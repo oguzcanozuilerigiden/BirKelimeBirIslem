@@ -48,10 +48,10 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             grp.LayoutMode = LayoutMode.Table;
             
             grp.OptionsTableLayoutGroup.ColumnDefinitions[0].SizeType = SizeType.Absolute;//0. Sütunu Sabit Yap
-            grp.OptionsTableLayoutGroup.ColumnDefinitions[0].Width = 100;
+            grp.OptionsTableLayoutGroup.ColumnDefinitions[0].Width = 75;
 
             grp.OptionsTableLayoutGroup.ColumnDefinitions[1].SizeType = SizeType.Absolute;//1. Sütunu Yüzde Ayarlı yap
-            grp.OptionsTableLayoutGroup.ColumnDefinitions[1].Width = 100;
+            grp.OptionsTableLayoutGroup.ColumnDefinitions[1].Width = 75;
 
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
