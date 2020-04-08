@@ -55,7 +55,7 @@
     <Compile Include="Classes\Islem\Hesapla.cs" />
     <Compile Include="Classes\Islem\Enums\Enum.cs" />
     <Compile Include="Classes\Islem\OyunAyarlari.cs" />
-    <Compile Include="Classes\Islem\CozumAra.cs" />
+    <Compile Include="Classes\Islem\Cozum.cs" />
     <Compile Include="Forms\Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>

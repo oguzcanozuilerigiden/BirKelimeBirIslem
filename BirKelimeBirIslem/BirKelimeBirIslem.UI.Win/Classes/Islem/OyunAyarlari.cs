@@ -15,7 +15,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
 
         public int HedefSayi { get; set; }
 
-        CozumAra CozumAra { get; set; }
+        Cozum Cozum { get; set; }
         #endregion Properties
 
         #region Constructor
@@ -31,10 +31,10 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #endregion        
 
         #region Functions
-        public CozumAra Basla()
+        public Cozum Basla()
         {
-            this.CozumAra = new CozumAra(HedefSayi, TekBasamakli, IkiBasamakli);
-            return CozumAra;
+            this.Cozum = new Cozum(HedefSayi, TekBasamakli, IkiBasamakli);
+            return Cozum;
         }
         #endregion
 
@@ -67,7 +67,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append(CozumAra);
+            sb.Append(Cozum);
             return sb.ToString();
         }
         #endregion ToString

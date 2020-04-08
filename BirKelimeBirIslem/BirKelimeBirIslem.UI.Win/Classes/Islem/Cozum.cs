@@ -5,7 +5,7 @@ using static BirKelimeBirIslem.UI.Win.Classes.Islem.Enums.Enum;
 
 namespace BirKelimeBirIslem.UI.Win.Classes
 {
-    class CozumAra
+    class Cozum
     {
         #region Properties
         public List<int> TumSayilar { get; private set; }
@@ -19,7 +19,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #endregion Properties
 
         #region Constructor
-        public CozumAra(int _hedef, List<int> _tekbasamakli, int _ikibasamakli)
+        public Cozum(int _hedef, List<int> _tekbasamakli, int _ikibasamakli)
         {
             TumSayilar = new List<int>();
 
