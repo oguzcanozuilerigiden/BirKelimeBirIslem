@@ -79,7 +79,7 @@
     <Compile Include="UserControls\Controls\MyCharTextEdit.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserControls\Controls\MyNumericDataLayoutControl.cs">
+    <Compile Include="UserControls\Controls\MyDataLayoutControl.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserControls\Controls\MyLabelEdit.cs">
