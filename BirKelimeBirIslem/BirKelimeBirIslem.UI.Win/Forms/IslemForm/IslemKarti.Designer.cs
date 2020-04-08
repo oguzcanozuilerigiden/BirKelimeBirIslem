@@ -129,7 +129,7 @@
             this.lblSure.Appearance.Options.UseForeColor = true;
             this.lblSure.Appearance.Options.UseTextOptions = true;
             this.lblSure.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lblSure.Location = new System.Drawing.Point(535, 184);
+            this.lblSure.Location = new System.Drawing.Point(533, 184);
             this.lblSure.Name = "lblSure";
             this.lblSure.Size = new System.Drawing.Size(55, 23);
             this.lblSure.StyleController = this.myDataLayoutControl1;
@@ -140,7 +140,7 @@
             // 
             this.txtHedef.EditValue = "100";
             this.txtHedef.EnterMoveNextControl = true;
-            this.txtHedef.Location = new System.Drawing.Point(490, 34);
+            this.txtHedef.Location = new System.Drawing.Point(485, 34);
             this.txtHedef.Name = "txtHedef";
             this.txtHedef.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.txtHedef.Properties.Appearance.ForeColor = System.Drawing.Color.DarkOrange;
@@ -314,7 +314,7 @@
             // tglSayiGiris
             // 
             this.tglSayiGiris.EnterMoveNextControl = true;
-            this.tglSayiGiris.Location = new System.Drawing.Point(565, 34);
+            this.tglSayiGiris.Location = new System.Drawing.Point(560, 34);
             this.tglSayiGiris.Name = "tglSayiGiris";
             this.tglSayiGiris.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic);
             this.tglSayiGiris.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -354,9 +354,9 @@
             this.btnBasla.AppearanceHovered.Options.UseForeColor = true;
             this.btnBasla.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
             this.btnBasla.AppearancePressed.Options.UseForeColor = true;
-            this.btnBasla.Location = new System.Drawing.Point(490, 112);
+            this.btnBasla.Location = new System.Drawing.Point(485, 112);
             this.btnBasla.Name = "btnBasla";
-            this.btnBasla.Size = new System.Drawing.Size(146, 46);
+            this.btnBasla.Size = new System.Drawing.Size(151, 46);
             this.btnBasla.StyleController = this.myDataLayoutControl1;
             this.btnBasla.TabIndex = 15;
             this.btnBasla.Text = "BAŞLA";
@@ -374,9 +374,9 @@
             this.btnSayiOlustur.AppearanceHovered.Options.UseForeColor = true;
             this.btnSayiOlustur.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
             this.btnSayiOlustur.AppearancePressed.Options.UseForeColor = true;
-            this.btnSayiOlustur.Location = new System.Drawing.Point(490, 62);
+            this.btnSayiOlustur.Location = new System.Drawing.Point(485, 62);
             this.btnSayiOlustur.Name = "btnSayiOlustur";
-            this.btnSayiOlustur.Size = new System.Drawing.Size(146, 46);
+            this.btnSayiOlustur.Size = new System.Drawing.Size(151, 46);
             this.btnSayiOlustur.StyleController = this.myDataLayoutControl1;
             this.btnSayiOlustur.TabIndex = 14;
             this.btnSayiOlustur.Text = "Sayı Oluştur";
@@ -418,7 +418,7 @@
             columnDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
             columnDefinition8.Width = 75D;
             columnDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition9.Width = 75D;
+            columnDefinition9.Width = 80D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
             columnDefinition1,
             columnDefinition2,
@@ -457,13 +457,13 @@
             this.layoutControlItem9.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem9.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem9.Control = this.btnSayiOlustur;
-            this.layoutControlItem9.Location = new System.Drawing.Point(478, 50);
+            this.layoutControlItem9.Location = new System.Drawing.Point(473, 50);
             this.layoutControlItem9.MinSize = new System.Drawing.Size(182, 32);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.OptionsTableLayoutItem.ColumnIndex = 7;
             this.layoutControlItem9.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem9.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem9.Size = new System.Drawing.Size(150, 50);
+            this.layoutControlItem9.Size = new System.Drawing.Size(155, 50);
             this.layoutControlItem9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
@@ -478,13 +478,13 @@
             this.layoutControlItem10.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem10.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem10.Control = this.btnBasla;
-            this.layoutControlItem10.Location = new System.Drawing.Point(478, 100);
+            this.layoutControlItem10.Location = new System.Drawing.Point(473, 100);
             this.layoutControlItem10.MinSize = new System.Drawing.Size(182, 32);
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.OptionsTableLayoutItem.ColumnIndex = 7;
             this.layoutControlItem10.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem10.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem10.Size = new System.Drawing.Size(150, 50);
+            this.layoutControlItem10.Size = new System.Drawing.Size(155, 50);
             this.layoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem10.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
@@ -520,10 +520,10 @@
             this.layoutControlItem8.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem8.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem8.Control = this.tglSayiGiris;
-            this.layoutControlItem8.Location = new System.Drawing.Point(553, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(548, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.OptionsTableLayoutItem.ColumnIndex = 8;
-            this.layoutControlItem8.Size = new System.Drawing.Size(75, 50);
+            this.layoutControlItem8.Size = new System.Drawing.Size(80, 50);
             this.layoutControlItem8.Text = "Giriş";
             this.layoutControlItem8.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem8.TextSize = new System.Drawing.Size(49, 19);
@@ -638,7 +638,7 @@
             this.layoutControlItem7.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem7.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem7.Control = this.txtHedef;
-            this.layoutControlItem7.Location = new System.Drawing.Point(478, 0);
+            this.layoutControlItem7.Location = new System.Drawing.Point(473, 0);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.OptionsTableLayoutItem.ColumnIndex = 7;
             this.layoutControlItem7.Size = new System.Drawing.Size(75, 50);
@@ -656,12 +656,12 @@
             this.layoutControlItem12.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem12.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem12.Control = this.lblSure;
-            this.layoutControlItem12.Location = new System.Drawing.Point(478, 150);
+            this.layoutControlItem12.Location = new System.Drawing.Point(473, 150);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.OptionsTableLayoutItem.ColumnIndex = 7;
             this.layoutControlItem12.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem12.Size = new System.Drawing.Size(150, 50);
+            this.layoutControlItem12.Size = new System.Drawing.Size(155, 50);
             this.layoutControlItem12.Text = "Süre:";
             this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem12.TextSize = new System.Drawing.Size(49, 19);
