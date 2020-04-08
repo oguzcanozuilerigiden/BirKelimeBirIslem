@@ -5,7 +5,6 @@ using DevExpress.XtraLayout;
 using DevExpress.XtraLayout.Utils;
 using System.Windows.Forms;
 using DevExpress.Utils;
-using DevExpress.XtraPrinting.Export.Pdf;
 
 namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
 {
@@ -17,11 +16,6 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
         {
             OptionsFocus.EnableAutoTabOrder = false;
             BackColor = Color.Transparent;
-            //Appearance.Control.ForeColor = Color.Maroon;
-            //Appearance.Control.TextOptions.HAlignment = HorzAlignment.Center;            
-            //Appearance.Control.Font = new Font(new FontFamily("Tahoma"), 12f, FontStyle.Bold);
-            //Appearance.Control.TextOptions.VAlignment = VertAlignment.Top;
-            //Appearance.Control.BorderColor = Color.Black;
         }
         public override string Text { get => base.Text; set => base.Text = value; }
         protected override LayoutControlImplementor CreateILayoutControlImplementorCore()
@@ -34,6 +28,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
     {
         public MyLayoutControlImplementor(ILayoutControlOwner owner) : base(owner)
         {
+
         }
 
         public override BaseLayoutItem CreateLayoutItem(LayoutGroup parent)
@@ -58,14 +53,14 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             grp.OptionsTableLayoutGroup.ColumnDefinitions[1].SizeType = SizeType.Absolute;//1. Sütunu Yüzde Ayarlı yap
             grp.OptionsTableLayoutGroup.ColumnDefinitions[1].Width = 100;
 
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
 
             grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Percent,  Width = 100 });//Yeni sütun ekle
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
-            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 100 });//Yeni sütun ekle
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
+            grp.OptionsTableLayoutGroup.ColumnDefinitions.Add(new ColumnDefinition { SizeType = SizeType.Absolute, Width = 75 });//Yeni sütun ekle
             //Satır İşlemleri
             grp.OptionsTableLayoutGroup.RowDefinitions.Clear();//Satırları Temizler
 

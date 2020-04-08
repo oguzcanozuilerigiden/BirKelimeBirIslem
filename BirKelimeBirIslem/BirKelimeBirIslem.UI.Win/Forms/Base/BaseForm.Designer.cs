@@ -78,8 +78,9 @@
             this.Controls.Add(this.stackPanel1);
             this.IconOptions.ShowIcon = false;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1000, 700);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(850, 400);
+            this.MinimumSize = new System.Drawing.Size(650, 400);
             this.Name = "BaseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.stackPanel1)).EndInit();

@@ -115,7 +115,7 @@
             this.myDataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 120, 650, 400);
             this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl1.Root = this.Root;
-            this.myDataLayoutControl1.Size = new System.Drawing.Size(848, 276);
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(648, 276);
             this.myDataLayoutControl1.TabIndex = 1;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
             // 
@@ -129,9 +129,9 @@
             this.lblSure.Appearance.Options.UseForeColor = true;
             this.lblSure.Appearance.Options.UseTextOptions = true;
             this.lblSure.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lblSure.Location = new System.Drawing.Point(700, 184);
+            this.lblSure.Location = new System.Drawing.Point(535, 184);
             this.lblSure.Name = "lblSure";
-            this.lblSure.Size = new System.Drawing.Size(76, 23);
+            this.lblSure.Size = new System.Drawing.Size(55, 23);
             this.lblSure.StyleController = this.myDataLayoutControl1;
             this.lblSure.TabIndex = 25;
             this.lblSure.Text = "00:00";
@@ -140,7 +140,7 @@
             // 
             this.txtHedef.EditValue = "100";
             this.txtHedef.EnterMoveNextControl = true;
-            this.txtHedef.Location = new System.Drawing.Point(640, 34);
+            this.txtHedef.Location = new System.Drawing.Point(490, 34);
             this.txtHedef.Name = "txtHedef";
             this.txtHedef.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.txtHedef.Properties.Appearance.ForeColor = System.Drawing.Color.DarkOrange;
@@ -157,7 +157,7 @@
             this.txtHedef.Properties.NullText = "100";
             this.txtHedef.Properties.NullValuePrompt = "100";
             this.txtHedef.Properties.ReadOnly = true;
-            this.txtHedef.Size = new System.Drawing.Size(96, 22);
+            this.txtHedef.Size = new System.Drawing.Size(71, 22);
             this.txtHedef.StyleController = this.myDataLayoutControl1;
             this.txtHedef.TabIndex = 24;
             // 
@@ -165,7 +165,7 @@
             // 
             this.txtSayi6.EditValue = "10";
             this.txtSayi6.EnterMoveNextControl = true;
-            this.txtSayi6.Location = new System.Drawing.Point(512, 34);
+            this.txtSayi6.Location = new System.Drawing.Point(387, 34);
             this.txtSayi6.Name = "txtSayi6";
             this.txtSayi6.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.txtSayi6.Properties.Appearance.ForeColor = System.Drawing.Color.DarkOrange;
@@ -182,7 +182,7 @@
             this.txtSayi6.Properties.NullText = "10";
             this.txtSayi6.Properties.NullValuePrompt = "10";
             this.txtSayi6.Properties.ReadOnly = true;
-            this.txtSayi6.Size = new System.Drawing.Size(96, 22);
+            this.txtSayi6.Size = new System.Drawing.Size(71, 22);
             this.txtSayi6.StyleController = this.myDataLayoutControl1;
             this.txtSayi6.TabIndex = 23;
             // 
@@ -190,7 +190,7 @@
             // 
             this.txtSayi5.EditValue = "1";
             this.txtSayi5.EnterMoveNextControl = true;
-            this.txtSayi5.Location = new System.Drawing.Point(412, 34);
+            this.txtSayi5.Location = new System.Drawing.Point(312, 34);
             this.txtSayi5.Name = "txtSayi5";
             this.txtSayi5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.txtSayi5.Properties.Appearance.ForeColor = System.Drawing.Color.DarkOrange;
@@ -207,7 +207,7 @@
             this.txtSayi5.Properties.NullText = "1";
             this.txtSayi5.Properties.NullValuePrompt = "1";
             this.txtSayi5.Properties.ReadOnly = true;
-            this.txtSayi5.Size = new System.Drawing.Size(96, 22);
+            this.txtSayi5.Size = new System.Drawing.Size(71, 22);
             this.txtSayi5.StyleController = this.myDataLayoutControl1;
             this.txtSayi5.TabIndex = 22;
             // 
@@ -215,7 +215,7 @@
             // 
             this.txtSayi4.EditValue = "1";
             this.txtSayi4.EnterMoveNextControl = true;
-            this.txtSayi4.Location = new System.Drawing.Point(312, 34);
+            this.txtSayi4.Location = new System.Drawing.Point(237, 34);
             this.txtSayi4.Name = "txtSayi4";
             this.txtSayi4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.txtSayi4.Properties.Appearance.ForeColor = System.Drawing.Color.DarkOrange;
@@ -232,7 +232,7 @@
             this.txtSayi4.Properties.NullText = "1";
             this.txtSayi4.Properties.NullValuePrompt = "1";
             this.txtSayi4.Properties.ReadOnly = true;
-            this.txtSayi4.Size = new System.Drawing.Size(96, 22);
+            this.txtSayi4.Size = new System.Drawing.Size(71, 22);
             this.txtSayi4.StyleController = this.myDataLayoutControl1;
             this.txtSayi4.TabIndex = 21;
             // 
@@ -240,7 +240,7 @@
             // 
             this.txtSayi3.EditValue = "1";
             this.txtSayi3.EnterMoveNextControl = true;
-            this.txtSayi3.Location = new System.Drawing.Point(212, 34);
+            this.txtSayi3.Location = new System.Drawing.Point(162, 34);
             this.txtSayi3.Name = "txtSayi3";
             this.txtSayi3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.txtSayi3.Properties.Appearance.ForeColor = System.Drawing.Color.DarkOrange;
@@ -257,7 +257,7 @@
             this.txtSayi3.Properties.NullText = "1";
             this.txtSayi3.Properties.NullValuePrompt = "1";
             this.txtSayi3.Properties.ReadOnly = true;
-            this.txtSayi3.Size = new System.Drawing.Size(96, 22);
+            this.txtSayi3.Size = new System.Drawing.Size(71, 22);
             this.txtSayi3.StyleController = this.myDataLayoutControl1;
             this.txtSayi3.TabIndex = 20;
             // 
@@ -265,7 +265,7 @@
             // 
             this.txtSayi2.EditValue = "1";
             this.txtSayi2.EnterMoveNextControl = true;
-            this.txtSayi2.Location = new System.Drawing.Point(112, 34);
+            this.txtSayi2.Location = new System.Drawing.Point(87, 34);
             this.txtSayi2.Name = "txtSayi2";
             this.txtSayi2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.txtSayi2.Properties.Appearance.ForeColor = System.Drawing.Color.DarkOrange;
@@ -282,7 +282,7 @@
             this.txtSayi2.Properties.NullText = "1";
             this.txtSayi2.Properties.NullValuePrompt = "1";
             this.txtSayi2.Properties.ReadOnly = true;
-            this.txtSayi2.Size = new System.Drawing.Size(96, 22);
+            this.txtSayi2.Size = new System.Drawing.Size(71, 22);
             this.txtSayi2.StyleController = this.myDataLayoutControl1;
             this.txtSayi2.TabIndex = 19;
             // 
@@ -307,14 +307,14 @@
             this.txtSayi1.Properties.NullText = "1";
             this.txtSayi1.Properties.NullValuePrompt = "1";
             this.txtSayi1.Properties.ReadOnly = true;
-            this.txtSayi1.Size = new System.Drawing.Size(96, 22);
+            this.txtSayi1.Size = new System.Drawing.Size(71, 22);
             this.txtSayi1.StyleController = this.myDataLayoutControl1;
             this.txtSayi1.TabIndex = 18;
             // 
             // tglSayiGiris
             // 
             this.tglSayiGiris.EnterMoveNextControl = true;
-            this.tglSayiGiris.Location = new System.Drawing.Point(740, 34);
+            this.tglSayiGiris.Location = new System.Drawing.Point(565, 34);
             this.tglSayiGiris.Name = "tglSayiGiris";
             this.tglSayiGiris.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic);
             this.tglSayiGiris.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -338,7 +338,7 @@
             this.lstIslemler.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.lstIslemler.Location = new System.Drawing.Point(12, 62);
             this.lstIslemler.Name = "lstIslemler";
-            this.lstIslemler.Size = new System.Drawing.Size(196, 146);
+            this.lstIslemler.Size = new System.Drawing.Size(146, 202);
             this.lstIslemler.StyleController = this.myDataLayoutControl1;
             this.lstIslemler.TabIndex = 16;
             // 
@@ -354,9 +354,9 @@
             this.btnBasla.AppearanceHovered.Options.UseForeColor = true;
             this.btnBasla.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
             this.btnBasla.AppearancePressed.Options.UseForeColor = true;
-            this.btnBasla.Location = new System.Drawing.Point(640, 112);
+            this.btnBasla.Location = new System.Drawing.Point(490, 112);
             this.btnBasla.Name = "btnBasla";
-            this.btnBasla.Size = new System.Drawing.Size(196, 46);
+            this.btnBasla.Size = new System.Drawing.Size(146, 46);
             this.btnBasla.StyleController = this.myDataLayoutControl1;
             this.btnBasla.TabIndex = 15;
             this.btnBasla.Text = "BAŞLA";
@@ -374,9 +374,9 @@
             this.btnSayiOlustur.AppearanceHovered.Options.UseForeColor = true;
             this.btnSayiOlustur.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
             this.btnSayiOlustur.AppearancePressed.Options.UseForeColor = true;
-            this.btnSayiOlustur.Location = new System.Drawing.Point(640, 62);
+            this.btnSayiOlustur.Location = new System.Drawing.Point(490, 62);
             this.btnSayiOlustur.Name = "btnSayiOlustur";
-            this.btnSayiOlustur.Size = new System.Drawing.Size(196, 46);
+            this.btnSayiOlustur.Size = new System.Drawing.Size(146, 46);
             this.btnSayiOlustur.StyleController = this.myDataLayoutControl1;
             this.btnSayiOlustur.TabIndex = 14;
             this.btnSayiOlustur.Text = "Sayı Oluştur";
@@ -402,23 +402,23 @@
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
             columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition1.Width = 100D;
+            columnDefinition1.Width = 75D;
             columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition2.Width = 100D;
+            columnDefinition2.Width = 75D;
             columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition3.Width = 100D;
+            columnDefinition3.Width = 75D;
             columnDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition4.Width = 100D;
+            columnDefinition4.Width = 75D;
             columnDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition5.Width = 100D;
+            columnDefinition5.Width = 75D;
             columnDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition6.Width = 100D;
+            columnDefinition6.Width = 75D;
             columnDefinition7.SizeType = System.Windows.Forms.SizeType.Percent;
             columnDefinition7.Width = 100D;
             columnDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition8.Width = 100D;
+            columnDefinition8.Width = 75D;
             columnDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition9.Width = 100D;
+            columnDefinition9.Width = 75D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
             columnDefinition1,
             columnDefinition2,
@@ -445,7 +445,7 @@
             rowDefinition3,
             rowDefinition4,
             rowDefinition5});
-            this.Root.Size = new System.Drawing.Size(848, 276);
+            this.Root.Size = new System.Drawing.Size(648, 276);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem9
@@ -457,13 +457,13 @@
             this.layoutControlItem9.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem9.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem9.Control = this.btnSayiOlustur;
-            this.layoutControlItem9.Location = new System.Drawing.Point(628, 50);
+            this.layoutControlItem9.Location = new System.Drawing.Point(478, 50);
             this.layoutControlItem9.MinSize = new System.Drawing.Size(182, 32);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.OptionsTableLayoutItem.ColumnIndex = 7;
             this.layoutControlItem9.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem9.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem9.Size = new System.Drawing.Size(200, 50);
+            this.layoutControlItem9.Size = new System.Drawing.Size(150, 50);
             this.layoutControlItem9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
@@ -478,13 +478,13 @@
             this.layoutControlItem10.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem10.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem10.Control = this.btnBasla;
-            this.layoutControlItem10.Location = new System.Drawing.Point(628, 100);
+            this.layoutControlItem10.Location = new System.Drawing.Point(478, 100);
             this.layoutControlItem10.MinSize = new System.Drawing.Size(182, 32);
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.OptionsTableLayoutItem.ColumnIndex = 7;
             this.layoutControlItem10.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem10.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem10.Size = new System.Drawing.Size(200, 50);
+            this.layoutControlItem10.Size = new System.Drawing.Size(150, 50);
             this.layoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem10.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
@@ -504,8 +504,8 @@
             this.layoutControlItem11.Name = "layoutControlItem11";
             this.layoutControlItem11.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem11.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem11.OptionsTableLayoutItem.RowSpan = 3;
-            this.layoutControlItem11.Size = new System.Drawing.Size(200, 150);
+            this.layoutControlItem11.OptionsTableLayoutItem.RowSpan = 4;
+            this.layoutControlItem11.Size = new System.Drawing.Size(150, 206);
             this.layoutControlItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem11.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
@@ -520,13 +520,13 @@
             this.layoutControlItem8.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem8.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem8.Control = this.tglSayiGiris;
-            this.layoutControlItem8.Location = new System.Drawing.Point(728, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(553, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
             this.layoutControlItem8.OptionsTableLayoutItem.ColumnIndex = 8;
-            this.layoutControlItem8.Size = new System.Drawing.Size(100, 50);
-            this.layoutControlItem8.Text = "Sayı Giriş";
+            this.layoutControlItem8.Size = new System.Drawing.Size(75, 50);
+            this.layoutControlItem8.Text = "Giriş";
             this.layoutControlItem8.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem1
             // 
@@ -539,10 +539,10 @@
             this.layoutControlItem1.Control = this.txtSayi1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(100, 50);
+            this.layoutControlItem1.Size = new System.Drawing.Size(75, 50);
             this.layoutControlItem1.Text = "Sayı 1";
             this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem2
             // 
@@ -553,13 +553,13 @@
             this.layoutControlItem2.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem2.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem2.Control = this.txtSayi2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(100, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(75, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutControlItem2.Size = new System.Drawing.Size(100, 50);
+            this.layoutControlItem2.Size = new System.Drawing.Size(75, 50);
             this.layoutControlItem2.Text = "Sayı 2";
             this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem3
             // 
@@ -570,13 +570,13 @@
             this.layoutControlItem3.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem3.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem3.Control = this.txtSayi3;
-            this.layoutControlItem3.Location = new System.Drawing.Point(200, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(150, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.OptionsTableLayoutItem.ColumnIndex = 2;
-            this.layoutControlItem3.Size = new System.Drawing.Size(100, 50);
+            this.layoutControlItem3.Size = new System.Drawing.Size(75, 50);
             this.layoutControlItem3.Text = "Sayı 3";
             this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem4
             // 
@@ -587,13 +587,13 @@
             this.layoutControlItem4.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem4.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem4.Control = this.txtSayi4;
-            this.layoutControlItem4.Location = new System.Drawing.Point(300, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(225, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.OptionsTableLayoutItem.ColumnIndex = 3;
-            this.layoutControlItem4.Size = new System.Drawing.Size(100, 50);
+            this.layoutControlItem4.Size = new System.Drawing.Size(75, 50);
             this.layoutControlItem4.Text = "Sayı 4";
             this.layoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem5
             // 
@@ -604,13 +604,13 @@
             this.layoutControlItem5.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem5.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem5.Control = this.txtSayi5;
-            this.layoutControlItem5.Location = new System.Drawing.Point(400, 0);
+            this.layoutControlItem5.Location = new System.Drawing.Point(300, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.OptionsTableLayoutItem.ColumnIndex = 4;
-            this.layoutControlItem5.Size = new System.Drawing.Size(100, 50);
+            this.layoutControlItem5.Size = new System.Drawing.Size(75, 50);
             this.layoutControlItem5.Text = "Sayı 5";
             this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem6
             // 
@@ -621,13 +621,13 @@
             this.layoutControlItem6.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem6.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem6.Control = this.txtSayi6;
-            this.layoutControlItem6.Location = new System.Drawing.Point(500, 0);
+            this.layoutControlItem6.Location = new System.Drawing.Point(375, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.OptionsTableLayoutItem.ColumnIndex = 5;
-            this.layoutControlItem6.Size = new System.Drawing.Size(100, 50);
+            this.layoutControlItem6.Size = new System.Drawing.Size(75, 50);
             this.layoutControlItem6.Text = "Sayı 6";
             this.layoutControlItem6.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem7
             // 
@@ -638,13 +638,13 @@
             this.layoutControlItem7.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem7.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem7.Control = this.txtHedef;
-            this.layoutControlItem7.Location = new System.Drawing.Point(628, 0);
+            this.layoutControlItem7.Location = new System.Drawing.Point(478, 0);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.OptionsTableLayoutItem.ColumnIndex = 7;
-            this.layoutControlItem7.Size = new System.Drawing.Size(100, 50);
+            this.layoutControlItem7.Size = new System.Drawing.Size(75, 50);
             this.layoutControlItem7.Text = "Hedef";
             this.layoutControlItem7.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem12
             // 
@@ -656,25 +656,23 @@
             this.layoutControlItem12.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem12.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControlItem12.Control = this.lblSure;
-            this.layoutControlItem12.Location = new System.Drawing.Point(628, 150);
+            this.layoutControlItem12.Location = new System.Drawing.Point(478, 150);
             this.layoutControlItem12.Name = "layoutControlItem12";
             this.layoutControlItem12.OptionsTableLayoutItem.ColumnIndex = 7;
             this.layoutControlItem12.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem12.Size = new System.Drawing.Size(200, 50);
+            this.layoutControlItem12.Size = new System.Drawing.Size(150, 50);
             this.layoutControlItem12.Text = "Süre:";
             this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(76, 19);
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(49, 19);
             // 
             // IslemKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 368);
+            this.ClientSize = new System.Drawing.Size(648, 368);
             this.Controls.Add(this.myDataLayoutControl1);
             this.IconOptions.ShowIcon = false;
-            this.MaximumSize = new System.Drawing.Size(1200, 700);
-            this.MinimumSize = new System.Drawing.Size(100, 100);
             this.Name = "IslemKarti";
             this.Text = "İşlem Kartı";
             this.Load += new System.EventHandler(this.IslemKarti_Load);
