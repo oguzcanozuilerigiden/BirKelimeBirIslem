@@ -11,9 +11,9 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
 {
 
     [ToolboxItem(true)]
-    public class MyDataLayoutControl : DataLayoutControl
+    public class MyNumericDataLayoutControl : DataLayoutControl
     {
-        public MyDataLayoutControl()
+        public MyNumericDataLayoutControl()
         {
             OptionsFocus.EnableAutoTabOrder = false;
             BackColor = Color.Transparent;
@@ -26,13 +26,13 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
         public override string Text { get => base.Text; set => base.Text = value; }
         protected override LayoutControlImplementor CreateILayoutControlImplementorCore()
         {
-            return new MyLayoutControlImplementor(this);            
+            return new MyNumericLayoutControlImplementor(this);            
         }
     }
 
-    internal class MyLayoutControlImplementor : LayoutControlImplementor
+    internal class MyNumericLayoutControlImplementor : LayoutControlImplementor
     {
-        public MyLayoutControlImplementor(ILayoutControlOwner owner) : base(owner)
+        public MyNumericLayoutControlImplementor(ILayoutControlOwner owner) : base(owner)
         {
         }
 

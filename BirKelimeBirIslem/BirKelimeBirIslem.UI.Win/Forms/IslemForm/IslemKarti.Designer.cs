@@ -42,7 +42,7 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
-            this.myDataLayoutControl1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyDataLayoutControl();
+            this.myDataLayoutControl1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyNumericDataLayoutControl();
             this.lblSure = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyLabelEdit();
             this.txtHedef = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
             this.txtSayi6 = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
@@ -709,7 +709,7 @@
 
         #endregion
 
-        private UserControls.Controls.MyDataLayoutControl myDataLayoutControl1;
+        private UserControls.Controls.MyNumericDataLayoutControl myDataLayoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private UserControls.Controls.MySimpleButton btnSayiOlustur;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
