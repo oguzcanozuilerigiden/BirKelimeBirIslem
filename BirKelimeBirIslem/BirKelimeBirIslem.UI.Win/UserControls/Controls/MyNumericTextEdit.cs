@@ -18,9 +18,10 @@ namespace BirKelimeBirIslem.UI.Win.UserControls
             Properties.Mask.MaskType = MaskType.Regular;
             Properties.Mask.EditMask = @"\d?";
             Properties.Mask.AutoComplete = AutoCompleteType.None;//Boş karaktere 0 konmasını engeller
-            Properties.NullValuePrompt = "0";
+            Properties.NullText = "1";
+            Properties.NullValuePrompt = "1";
             Properties.MaxLength = 1;
-            Text = "0";
+            Text = "1";
             ReadOnly = true;
         }
 
