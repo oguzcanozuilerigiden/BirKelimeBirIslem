@@ -69,7 +69,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             //Satır İşlemleri
             grp.OptionsTableLayoutGroup.RowDefinitions.Clear();//Satırları Temizler
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 //9 satır + 1 satır
                 grp.OptionsTableLayoutGroup.RowDefinitions.Add(new RowDefinition
@@ -77,7 +77,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
                     SizeType = SizeType.Absolute,
                     Height = 50
                 });
-                if (i + 1 != 3) continue;
+                if (i + 1 != 4) continue;
                 grp.OptionsTableLayoutGroup.RowDefinitions.Add(new RowDefinition
                 {
                     SizeType = SizeType.Percent,
