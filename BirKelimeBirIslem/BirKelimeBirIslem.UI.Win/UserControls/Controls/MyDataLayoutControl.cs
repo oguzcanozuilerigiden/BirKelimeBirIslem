@@ -10,9 +10,9 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
 {
 
     [ToolboxItem(true)]
-    public class MyNumericDataLayoutControl : DataLayoutControl
+    public class MyDataLayoutControl : DataLayoutControl
     {
-        public MyNumericDataLayoutControl()
+        public MyDataLayoutControl()
         {
             OptionsFocus.EnableAutoTabOrder = false;
             BackColor = Color.Transparent;
@@ -20,13 +20,13 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
         public override string Text { get => base.Text; set => base.Text = value; }
         protected override LayoutControlImplementor CreateILayoutControlImplementorCore()
         {
-            return new MyNumericLayoutControlImplementor(this);            
+            return new MyLayoutControlImplementor(this);            
         }
     }
 
-    internal class MyNumericLayoutControlImplementor : LayoutControlImplementor
+    internal class MyLayoutControlImplementor : LayoutControlImplementor
     {
-        public MyNumericLayoutControlImplementor(ILayoutControlOwner owner) : base(owner)
+        public MyLayoutControlImplementor(ILayoutControlOwner owner) : base(owner)
         {
 
         }
@@ -48,7 +48,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             grp.LayoutMode = LayoutMode.Table;
             
             grp.OptionsTableLayoutGroup.ColumnDefinitions[0].SizeType = SizeType.Absolute;//0. Sütunu Sabit Yap
-            grp.OptionsTableLayoutGroup.ColumnDefinitions[0].Width = 100;
+            grp.OptionsTableLayoutGroup.ColumnDefinitions[0].Width = 75;
 
             grp.OptionsTableLayoutGroup.ColumnDefinitions[1].SizeType = SizeType.Absolute;//1. Sütunu Yüzde Ayarlı yap
             grp.OptionsTableLayoutGroup.ColumnDefinitions[1].Width = 100;
