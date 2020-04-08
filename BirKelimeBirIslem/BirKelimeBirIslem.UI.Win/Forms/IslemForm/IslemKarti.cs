@@ -11,7 +11,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
         {
             InitializeComponent();
         }
-
+        //
         OyunAyarlari oyun;
         private DateTime _startTime = DateTime.Now; // Set the starting time
         private TimeSpan _timeSpan = new TimeSpan(0, 1, 0);  // 1 minute 10 seconds as total time
