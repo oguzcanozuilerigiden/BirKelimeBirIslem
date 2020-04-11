@@ -12,7 +12,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
             InitializeComponent();
         }
 
-        OyunAyarlari oyun;
+        OyunAyarlari oyunayarlari;
         private DateTime _startTime = DateTime.Now; // Set the starting time
         private TimeSpan _timeSpan = new TimeSpan(0, 1, 0);  // 1 minute 10 seconds as total time
         System.Diagnostics.Stopwatch st = new System.Diagnostics.Stopwatch();
@@ -37,16 +37,16 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
         {
             try
             {
-                oyun = new OyunAyarlari();
+                oyunayarlari = new OyunAyarlari();
                 lstIslemler.Items.Clear();
 
-                txtSayi1.Text = oyun.TekBasamakli[0].ToString();
-                txtSayi2.Text = oyun.TekBasamakli[1].ToString();
-                txtSayi3.Text = oyun.TekBasamakli[2].ToString();
-                txtSayi4.Text = oyun.TekBasamakli[3].ToString();
-                txtSayi5.Text = oyun.TekBasamakli[4].ToString();
-                txtSayi6.Text = oyun.IkiBasamakli.ToString();
-                txtHedef.Text = oyun.HedefSayi.ToString();
+                txtSayi1.Text = oyunayarlari.TekBasamakli[0].ToString();
+                txtSayi2.Text = oyunayarlari.TekBasamakli[1].ToString();
+                txtSayi3.Text = oyunayarlari.TekBasamakli[2].ToString();
+                txtSayi4.Text = oyunayarlari.TekBasamakli[3].ToString();
+                txtSayi5.Text = oyunayarlari.TekBasamakli[4].ToString();
+                txtSayi6.Text = oyunayarlari.IkiBasamakli.ToString();
+                txtHedef.Text = oyunayarlari.HedefSayi.ToString();
             }
             catch (Exception)
             {
@@ -62,16 +62,16 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
                 VeriKontrol();
                 lstIslemler.Items.Clear();
 
-                oyun.TekBasamakli[0] = Convert.ToInt32(txtSayi1.Text);
-                oyun.TekBasamakli[1] = Convert.ToInt32(txtSayi2.Text);
-                oyun.TekBasamakli[2] = Convert.ToInt32(txtSayi3.Text);
-                oyun.TekBasamakli[3] = Convert.ToInt32(txtSayi4.Text);
-                oyun.TekBasamakli[4] = Convert.ToInt32(txtSayi5.Text);
-                oyun.IkiBasamakli = Convert.ToInt32(txtSayi6.Text);
-                oyun.HedefSayi = Convert.ToInt32(txtHedef.Text);
+                oyunayarlari.TekBasamakli[0] = Convert.ToInt32(txtSayi1.Text);
+                oyunayarlari.TekBasamakli[1] = Convert.ToInt32(txtSayi2.Text);
+                oyunayarlari.TekBasamakli[2] = Convert.ToInt32(txtSayi3.Text);
+                oyunayarlari.TekBasamakli[3] = Convert.ToInt32(txtSayi4.Text);
+                oyunayarlari.TekBasamakli[4] = Convert.ToInt32(txtSayi5.Text);
+                oyunayarlari.IkiBasamakli = Convert.ToInt32(txtSayi6.Text);
+                oyunayarlari.HedefSayi = Convert.ToInt32(txtHedef.Text);
 
                 st.Start();
-                var ifd = oyun.Basla();
+                var ifd = oyunayarlari.Basla();
                 int adet = ifd.ToString().ToCharArray().Count(c => c == '=');
                 lstIslemler.ItemHeight = (adet + 1) * 15;
                 st.Stop();
