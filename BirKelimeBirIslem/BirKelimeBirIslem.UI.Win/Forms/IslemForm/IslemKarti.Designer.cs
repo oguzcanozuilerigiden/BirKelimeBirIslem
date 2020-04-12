@@ -336,6 +336,7 @@
             this.lstIslemler.Appearance.Options.UseForeColor = true;
             this.lstIslemler.Appearance.Options.UseTextOptions = true;
             this.lstIslemler.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lstIslemler.ItemAutoHeight = true;
             this.lstIslemler.Location = new System.Drawing.Point(12, 62);
             this.lstIslemler.Name = "lstIslemler";
             this.lstIslemler.Size = new System.Drawing.Size(146, 202);
