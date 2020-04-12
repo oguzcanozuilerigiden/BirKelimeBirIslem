@@ -10,6 +10,40 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
         public IslemKarti()
         {
             InitializeComponent();
+            myToggleSwitch1.Toggled += MyToggleSwitch1_Toggled;      
+        }
+
+        private void MyToggleSwitch1_Toggled(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tglSayiGiris.IsOn)
+                {
+                    txtSayi1.ReadOnly = false;
+                    txtSayi2.ReadOnly = false;
+                    txtSayi3.ReadOnly = false;
+                    txtSayi4.ReadOnly = false;
+                    txtSayi5.ReadOnly = false;
+                    txtSayi6.ReadOnly = false;
+                    txtHedef.ReadOnly = false;
+                    btnSayiOlustur.Enabled = false;
+                }
+                else
+                {
+                    txtSayi1.ReadOnly = true;
+                    txtSayi2.ReadOnly = true;
+                    txtSayi3.ReadOnly = true;
+                    txtSayi4.ReadOnly = true;
+                    txtSayi5.ReadOnly = true;
+                    txtSayi6.ReadOnly = true;
+                    txtHedef.ReadOnly = true;
+                    btnSayiOlustur.Enabled = true;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         OyunAyarlari oyunayarlari;
@@ -30,7 +64,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
 
         private void IslemKarti_Load(object sender, System.EventArgs e)
         {
-
+            lblSure.Text = "00:00";
         }
 
         private void btnSayiOlustur_Click(object sender, EventArgs e)
@@ -84,37 +118,5 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
             }            
         }     
 
-        private void tglSayiGiris_Toggled(object sender, EventArgs e)
-        {
-            try
-            {
-                if (tglSayiGiris.IsOn)
-                {
-                    txtSayi1.ReadOnly = false;
-                    txtSayi2.ReadOnly = false;
-                    txtSayi3.ReadOnly = false;
-                    txtSayi4.ReadOnly = false;
-                    txtSayi5.ReadOnly = false;
-                    txtSayi6.ReadOnly = false;
-                    txtHedef.ReadOnly = false;
-                    btnSayiOlustur.Enabled = false;
-                }
-                else
-                {
-                    txtSayi1.ReadOnly = true;
-                    txtSayi2.ReadOnly = true;
-                    txtSayi3.ReadOnly = true;
-                    txtSayi4.ReadOnly = true;
-                    txtSayi5.ReadOnly = true;
-                    txtSayi6.ReadOnly = true;
-                    txtHedef.ReadOnly = true;
-                    btnSayiOlustur.Enabled = true;
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }            
-        }
     }
 }

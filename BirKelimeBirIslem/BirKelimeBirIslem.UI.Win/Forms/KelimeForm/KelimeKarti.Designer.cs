@@ -44,12 +44,11 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
             this.myDataLayoutControl1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyDataLayoutControl();
-            this.lblSure = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyLabelEdit();
             this.BtnDosya = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyButtonEdit();
             this.lstKelime = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyListBoxControl();
             this.btnBasla = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MySimpleButton();
-            this.btn_HarfOlustur = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MySimpleButton();
-            this.myToggleSwitch1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyToggleSwitch();
+            this.btnHarfOlustur = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MySimpleButton();
+            this.tglHarfGiris = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyToggleSwitch();
             this.txtJoker = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyCharTextEdit();
             this.txtHarf8 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyCharTextEdit();
             this.txtHarf7 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyCharTextEdit();
@@ -74,12 +73,11 @@
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).BeginInit();
             this.myDataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnDosya.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstKelime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tglHarfGiris.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJoker.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarf8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarf7.Properties)).BeginInit();
@@ -104,18 +102,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             this.SuspendLayout();
             // 
             // myDataLayoutControl1
             // 
             this.myDataLayoutControl1.BackColor = System.Drawing.Color.Transparent;
-            this.myDataLayoutControl1.Controls.Add(this.lblSure);
             this.myDataLayoutControl1.Controls.Add(this.BtnDosya);
             this.myDataLayoutControl1.Controls.Add(this.lstKelime);
             this.myDataLayoutControl1.Controls.Add(this.btnBasla);
-            this.myDataLayoutControl1.Controls.Add(this.btn_HarfOlustur);
-            this.myDataLayoutControl1.Controls.Add(this.myToggleSwitch1);
+            this.myDataLayoutControl1.Controls.Add(this.btnHarfOlustur);
+            this.myDataLayoutControl1.Controls.Add(this.tglHarfGiris);
             this.myDataLayoutControl1.Controls.Add(this.txtJoker);
             this.myDataLayoutControl1.Controls.Add(this.txtHarf8);
             this.myDataLayoutControl1.Controls.Add(this.txtHarf7);
@@ -126,30 +122,13 @@
             this.myDataLayoutControl1.Controls.Add(this.txtHarf2);
             this.myDataLayoutControl1.Controls.Add(this.txtHarf1);
             this.myDataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.myDataLayoutControl1.Location = new System.Drawing.Point(0, 92);
+            this.myDataLayoutControl1.Location = new System.Drawing.Point(0, 85);
             this.myDataLayoutControl1.Name = "myDataLayoutControl1";
             this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl1.Root = this.Root;
-            this.myDataLayoutControl1.Size = new System.Drawing.Size(698, 276);
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(698, 283);
             this.myDataLayoutControl1.TabIndex = 2;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
-            // 
-            // lblSure
-            // 
-            this.lblSure.Appearance.BackColor = System.Drawing.Color.Orange;
-            this.lblSure.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.lblSure.Appearance.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblSure.Appearance.Options.UseBackColor = true;
-            this.lblSure.Appearance.Options.UseFont = true;
-            this.lblSure.Appearance.Options.UseForeColor = true;
-            this.lblSure.Appearance.Options.UseTextOptions = true;
-            this.lblSure.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lblSure.Location = new System.Drawing.Point(432, 134);
-            this.lblSure.Name = "lblSure";
-            this.lblSure.Size = new System.Drawing.Size(55, 23);
-            this.lblSure.StyleController = this.myDataLayoutControl1;
-            this.lblSure.TabIndex = 18;
-            this.lblSure.Text = "00:00";
             // 
             // BtnDosya
             // 
@@ -164,7 +143,6 @@
             this.BtnDosya.Size = new System.Drawing.Size(146, 20);
             this.BtnDosya.StyleController = this.myDataLayoutControl1;
             this.BtnDosya.TabIndex = 17;
-            this.BtnDosya.EditValueChanged += new System.EventHandler(this.BtnDosya_EditValueChanged);
             this.BtnDosya.Click += new System.EventHandler(this.BtnDosya_Click);
             // 
             // lstKelime
@@ -176,7 +154,7 @@
             this.lstKelime.ItemAutoHeight = true;
             this.lstKelime.Location = new System.Drawing.Point(12, 62);
             this.lstKelime.Name = "lstKelime";
-            this.lstKelime.Size = new System.Drawing.Size(296, 202);
+            this.lstKelime.Size = new System.Drawing.Size(296, 209);
             this.lstKelime.StyleController = this.myDataLayoutControl1;
             this.lstKelime.TabIndex = 16;
             // 
@@ -200,43 +178,43 @@
             this.btnBasla.Text = "Başla";
             this.btnBasla.Click += new System.EventHandler(this.btnBasla_Click);
             // 
-            // btn_HarfOlustur
+            // btnHarfOlustur
             // 
-            this.btn_HarfOlustur.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_HarfOlustur.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_HarfOlustur.Appearance.Options.UseFont = true;
-            this.btn_HarfOlustur.Appearance.Options.UseForeColor = true;
-            this.btn_HarfOlustur.AppearanceHovered.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_HarfOlustur.AppearanceHovered.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_HarfOlustur.AppearanceHovered.Options.UseBackColor = true;
-            this.btn_HarfOlustur.AppearanceHovered.Options.UseForeColor = true;
-            this.btn_HarfOlustur.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_HarfOlustur.AppearancePressed.Options.UseForeColor = true;
-            this.btn_HarfOlustur.Location = new System.Drawing.Point(537, 112);
-            this.btn_HarfOlustur.Name = "btn_HarfOlustur";
-            this.btn_HarfOlustur.Size = new System.Drawing.Size(146, 46);
-            this.btn_HarfOlustur.StyleController = this.myDataLayoutControl1;
-            this.btn_HarfOlustur.TabIndex = 14;
-            this.btn_HarfOlustur.Text = "Harf Oluştur";
-            this.btn_HarfOlustur.Click += new System.EventHandler(this.btn_HarfOlustur_Click);
+            this.btnHarfOlustur.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
+            this.btnHarfOlustur.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.btnHarfOlustur.Appearance.Options.UseFont = true;
+            this.btnHarfOlustur.Appearance.Options.UseForeColor = true;
+            this.btnHarfOlustur.AppearanceHovered.BackColor = System.Drawing.Color.LightCyan;
+            this.btnHarfOlustur.AppearanceHovered.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnHarfOlustur.AppearanceHovered.Options.UseBackColor = true;
+            this.btnHarfOlustur.AppearanceHovered.Options.UseForeColor = true;
+            this.btnHarfOlustur.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
+            this.btnHarfOlustur.AppearancePressed.Options.UseForeColor = true;
+            this.btnHarfOlustur.Location = new System.Drawing.Point(537, 112);
+            this.btnHarfOlustur.Name = "btnHarfOlustur";
+            this.btnHarfOlustur.Size = new System.Drawing.Size(146, 46);
+            this.btnHarfOlustur.StyleController = this.myDataLayoutControl1;
+            this.btnHarfOlustur.TabIndex = 14;
+            this.btnHarfOlustur.Text = "Harf Oluştur";
+            this.btnHarfOlustur.Click += new System.EventHandler(this.btnHarfOlustur_Click);
             // 
-            // myToggleSwitch1
+            // tglHarfGiris
             // 
-            this.myToggleSwitch1.EnterMoveNextControl = true;
-            this.myToggleSwitch1.Location = new System.Drawing.Point(537, 84);
-            this.myToggleSwitch1.Name = "myToggleSwitch1";
-            this.myToggleSwitch1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic);
-            this.myToggleSwitch1.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.myToggleSwitch1.Properties.Appearance.Options.UseFont = true;
-            this.myToggleSwitch1.Properties.Appearance.Options.UseForeColor = true;
-            this.myToggleSwitch1.Properties.AutoHeight = false;
-            this.myToggleSwitch1.Properties.AutoWidth = true;
-            this.myToggleSwitch1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.myToggleSwitch1.Properties.OffText = "Pasif";
-            this.myToggleSwitch1.Properties.OnText = "Aktif";
-            this.myToggleSwitch1.Size = new System.Drawing.Size(80, 24);
-            this.myToggleSwitch1.StyleController = this.myDataLayoutControl1;
-            this.myToggleSwitch1.TabIndex = 13;
+            this.tglHarfGiris.EnterMoveNextControl = true;
+            this.tglHarfGiris.Location = new System.Drawing.Point(537, 84);
+            this.tglHarfGiris.Name = "tglHarfGiris";
+            this.tglHarfGiris.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic);
+            this.tglHarfGiris.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.tglHarfGiris.Properties.Appearance.Options.UseFont = true;
+            this.tglHarfGiris.Properties.Appearance.Options.UseForeColor = true;
+            this.tglHarfGiris.Properties.AutoHeight = false;
+            this.tglHarfGiris.Properties.AutoWidth = true;
+            this.tglHarfGiris.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.tglHarfGiris.Properties.OffText = "Pasif";
+            this.tglHarfGiris.Properties.OnText = "Aktif";
+            this.tglHarfGiris.Size = new System.Drawing.Size(80, 24);
+            this.tglHarfGiris.StyleController = this.myDataLayoutControl1;
+            this.tglHarfGiris.TabIndex = 13;
             // 
             // txtJoker
             // 
@@ -481,8 +459,7 @@
             this.layoutControlItem10,
             this.layoutControlItem11,
             this.layoutControlItem12,
-            this.layoutControlItem13,
-            this.layoutControlItem14});
+            this.layoutControlItem13});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
             columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
@@ -532,7 +509,7 @@
             rowDefinition3,
             rowDefinition4,
             rowDefinition5});
-            this.Root.Size = new System.Drawing.Size(698, 276);
+            this.Root.Size = new System.Drawing.Size(698, 283);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -697,7 +674,7 @@
             this.tglHafGiris.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.tglHafGiris.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.tglHafGiris.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tglHafGiris.Control = this.myToggleSwitch1;
+            this.tglHafGiris.Control = this.tglHarfGiris;
             this.tglHafGiris.Location = new System.Drawing.Point(525, 50);
             this.tglHafGiris.Name = "tglHafGiris";
             this.tglHafGiris.OptionsTableLayoutItem.ColumnIndex = 7;
@@ -716,7 +693,7 @@
             this.layoutControlItem10.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem10.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem10.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem10.Control = this.btn_HarfOlustur;
+            this.layoutControlItem10.Control = this.btnHarfOlustur;
             this.layoutControlItem10.Location = new System.Drawing.Point(525, 100);
             this.layoutControlItem10.MinSize = new System.Drawing.Size(182, 32);
             this.layoutControlItem10.Name = "layoutControlItem10";
@@ -764,7 +741,7 @@
             this.layoutControlItem12.OptionsTableLayoutItem.ColumnSpan = 4;
             this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem12.OptionsTableLayoutItem.RowSpan = 4;
-            this.layoutControlItem12.Size = new System.Drawing.Size(300, 206);
+            this.layoutControlItem12.Size = new System.Drawing.Size(300, 213);
             this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
@@ -788,27 +765,6 @@
             this.layoutControlItem13.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem13.TextSize = new System.Drawing.Size(50, 19);
             // 
-            // layoutControlItem14
-            // 
-            this.layoutControlItem14.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem14.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem14.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem14.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem14.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem14.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem14.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem14.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.layoutControlItem14.Control = this.lblSure;
-            this.layoutControlItem14.Location = new System.Drawing.Point(375, 100);
-            this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.OptionsTableLayoutItem.ColumnIndex = 5;
-            this.layoutControlItem14.OptionsTableLayoutItem.ColumnSpan = 2;
-            this.layoutControlItem14.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem14.Size = new System.Drawing.Size(150, 50);
-            this.layoutControlItem14.Text = "Süre";
-            this.layoutControlItem14.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem14.TextSize = new System.Drawing.Size(50, 19);
-            // 
             // KelimeKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -825,7 +781,7 @@
             this.myDataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnDosya.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstKelime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myToggleSwitch1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tglHarfGiris.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJoker.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarf8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarf7.Properties)).EndInit();
@@ -850,7 +806,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -879,15 +834,13 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private UserControls.Controls.MyListBoxControl lstKelime;
         private UserControls.Controls.MySimpleButton btnBasla;
-        private UserControls.Controls.MySimpleButton btn_HarfOlustur;
-        private UserControls.Controls.MyToggleSwitch myToggleSwitch1;
+        private UserControls.Controls.MySimpleButton btnHarfOlustur;
+        private UserControls.Controls.MyToggleSwitch tglHarfGiris;
         private DevExpress.XtraLayout.LayoutControlItem tglHafGiris;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private UserControls.Controls.MyButtonEdit BtnDosya;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private UserControls.Controls.MyLabelEdit lblSure;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
     }
 }

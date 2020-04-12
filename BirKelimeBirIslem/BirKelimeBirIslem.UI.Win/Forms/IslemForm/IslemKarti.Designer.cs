@@ -43,7 +43,6 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
             this.myDataLayoutControl1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyDataLayoutControl();
-            this.lblSure = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyLabelEdit();
             this.txtHedef = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
             this.txtSayi6 = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
             this.txtSayi5 = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
@@ -67,7 +66,6 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).BeginInit();
             this.myDataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtHedef.Properties)).BeginInit();
@@ -91,13 +89,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             this.SuspendLayout();
             // 
             // myDataLayoutControl1
             // 
             this.myDataLayoutControl1.BackColor = System.Drawing.Color.Transparent;
-            this.myDataLayoutControl1.Controls.Add(this.lblSure);
             this.myDataLayoutControl1.Controls.Add(this.txtHedef);
             this.myDataLayoutControl1.Controls.Add(this.txtSayi6);
             this.myDataLayoutControl1.Controls.Add(this.txtSayi5);
@@ -110,31 +106,14 @@
             this.myDataLayoutControl1.Controls.Add(this.btnBasla);
             this.myDataLayoutControl1.Controls.Add(this.btnSayiOlustur);
             this.myDataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.myDataLayoutControl1.Location = new System.Drawing.Point(0, 92);
+            this.myDataLayoutControl1.Location = new System.Drawing.Point(0, 85);
             this.myDataLayoutControl1.Name = "myDataLayoutControl1";
             this.myDataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 120, 650, 400);
             this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl1.Root = this.Root;
-            this.myDataLayoutControl1.Size = new System.Drawing.Size(648, 276);
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(648, 283);
             this.myDataLayoutControl1.TabIndex = 1;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
-            // 
-            // lblSure
-            // 
-            this.lblSure.Appearance.BackColor = System.Drawing.Color.Orange;
-            this.lblSure.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.lblSure.Appearance.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblSure.Appearance.Options.UseBackColor = true;
-            this.lblSure.Appearance.Options.UseFont = true;
-            this.lblSure.Appearance.Options.UseForeColor = true;
-            this.lblSure.Appearance.Options.UseTextOptions = true;
-            this.lblSure.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lblSure.Location = new System.Drawing.Point(535, 184);
-            this.lblSure.Name = "lblSure";
-            this.lblSure.Size = new System.Drawing.Size(55, 23);
-            this.lblSure.StyleController = this.myDataLayoutControl1;
-            this.lblSure.TabIndex = 25;
-            this.lblSure.Text = "00:00";
             // 
             // txtHedef
             // 
@@ -328,7 +307,6 @@
             this.tglSayiGiris.Size = new System.Drawing.Size(80, 24);
             this.tglSayiGiris.StyleController = this.myDataLayoutControl1;
             this.tglSayiGiris.TabIndex = 17;
-            this.tglSayiGiris.Toggled += new System.EventHandler(this.tglSayiGiris_Toggled);
             // 
             // lstIslemler
             // 
@@ -339,7 +317,7 @@
             this.lstIslemler.ItemAutoHeight = true;
             this.lstIslemler.Location = new System.Drawing.Point(12, 62);
             this.lstIslemler.Name = "lstIslemler";
-            this.lstIslemler.Size = new System.Drawing.Size(146, 202);
+            this.lstIslemler.Size = new System.Drawing.Size(146, 209);
             this.lstIslemler.StyleController = this.myDataLayoutControl1;
             this.lstIslemler.TabIndex = 16;
             // 
@@ -398,8 +376,7 @@
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem6,
-            this.layoutControlItem7,
-            this.layoutControlItem12});
+            this.layoutControlItem7});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
             columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
@@ -446,7 +423,7 @@
             rowDefinition3,
             rowDefinition4,
             rowDefinition5});
-            this.Root.Size = new System.Drawing.Size(648, 276);
+            this.Root.Size = new System.Drawing.Size(648, 283);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem9
@@ -506,7 +483,7 @@
             this.layoutControlItem11.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem11.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem11.OptionsTableLayoutItem.RowSpan = 4;
-            this.layoutControlItem11.Size = new System.Drawing.Size(150, 206);
+            this.layoutControlItem11.Size = new System.Drawing.Size(150, 213);
             this.layoutControlItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem11.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
@@ -647,26 +624,6 @@
             this.layoutControlItem7.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(49, 19);
             // 
-            // layoutControlItem12
-            // 
-            this.layoutControlItem12.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem12.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem12.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem12.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem12.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem12.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem12.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem12.Control = this.lblSure;
-            this.layoutControlItem12.Location = new System.Drawing.Point(478, 150);
-            this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.OptionsTableLayoutItem.ColumnIndex = 7;
-            this.layoutControlItem12.OptionsTableLayoutItem.ColumnSpan = 2;
-            this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem12.Size = new System.Drawing.Size(150, 50);
-            this.layoutControlItem12.Text = "Süre:";
-            this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(49, 19);
-            // 
             // IslemKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,7 +658,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -732,7 +688,5 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private UserControls.MyNumericTextEdit txtHedef;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private UserControls.Controls.MyLabelEdit lblSure;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
     }
 }

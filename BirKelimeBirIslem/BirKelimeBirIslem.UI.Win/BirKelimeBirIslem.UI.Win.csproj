@@ -79,7 +79,6 @@
     <Compile Include="Classes\Islem\Cozum.cs" />
     <Compile Include="Classes\Kelime\KelimeAra.cs" />
     <Compile Include="Classes\Kelime\KelimeAyarlari.cs" />
-    <Compile Include="Classes\Kelime\KelimeYukle.cs" />
     <Compile Include="Forms\Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>

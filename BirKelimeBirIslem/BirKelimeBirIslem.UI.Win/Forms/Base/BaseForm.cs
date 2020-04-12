@@ -17,5 +17,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.Base
         {
             InitializeComponent();
         }
+
+       
     }
 }

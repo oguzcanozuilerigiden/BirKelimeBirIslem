@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using System.Xml.Linq;
 
 namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 {
@@ -41,6 +40,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
                        select a;
             return list.ToList();
         }
+
         public KelimeAra Basla()
         {           
             this.ara = new KelimeAra(kelimelistesi,Harfler);            
@@ -66,11 +66,13 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
         }
         #endregion
 
+        #region ToString
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(ara);
             return sb.ToString();
-        }
+        } 
+        #endregion
     }
 }
