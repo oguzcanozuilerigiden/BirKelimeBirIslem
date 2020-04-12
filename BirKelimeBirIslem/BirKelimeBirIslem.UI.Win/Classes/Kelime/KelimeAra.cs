@@ -1,10 +1,8 @@
 ﻿using BirKelimeBirIslem.Model.Entities;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linp;
+using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 {
@@ -17,7 +15,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 
         public KelimeAra(List<Kelime_Anlam> _liste, List<string> _harfler)
         {
-            
+            int adet = 0;
             int sira = -1;
             max = 0;
 
@@ -35,7 +33,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
                     if (sira != -1)
                     {
                         adet++;
-                        kelime= kelime.Remove(sira, 1);
+                        kelime = kelime.Remove(sira, 1);
                         sira = -1;
                     }
                 }
@@ -51,9 +49,9 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
             {
                 if (harfmiktar[item.i] == max)
                 {
-                     { Kelime_ID = item.value.Kelime_ID, Kelime = item.value.Kelime, Anlam = item.value.Anlam });
+                    bulunankelimeler.Add(new Kelime_Anlam { Kelime_ID = item.value.Kelime_ID, Kelime = item.value.Kelime, Anlam = item.value.Anlam });
                 }
-            }       
+            }
         }
         public override string ToString()
         {
@@ -91,7 +89,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
                     puan = "Alınan Puan: 1" + Environment.NewLine + max + "( Harf Eşleşti.)";
                     break;
                 default:
-                    puan = "Alınan Puan: 15" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    puan = "Alınan Puan: 0" + Environment.NewLine + max + "( Harf Eşleşti.)";
                     break;
             }
             sb.Append(puan);
