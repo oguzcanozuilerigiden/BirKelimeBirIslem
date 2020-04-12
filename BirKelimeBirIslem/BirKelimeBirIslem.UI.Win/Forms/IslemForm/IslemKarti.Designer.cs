@@ -50,15 +50,10 @@
             this.txtSayi3 = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
             this.txtSayi2 = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
             this.txtSayi1 = new BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit();
-            this.tglSayiGiris = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyToggleSwitch();
             this.lstIslemler = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyListBoxControl();
-            this.btnBasla = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MySimpleButton();
-            this.btnSayiOlustur = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MySimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -66,6 +61,7 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).BeginInit();
             this.myDataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtHedef.Properties)).BeginInit();
@@ -75,13 +71,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtSayi3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSayi2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSayi1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tglSayiGiris.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstIslemler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
@@ -90,6 +83,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ribbonControl
+            // 
+            this.ribbonControl.ExpandCollapseItem.Id = 0;
+            // 
+            // 
+            // 
+            this.ribbonControl.SearchEditItem.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.ribbonControl.SearchEditItem.EditWidth = 150;
+            this.ribbonControl.SearchEditItem.Id = -5000;
+            this.ribbonControl.SearchEditItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.ribbonControl.SearchEditItem.UseEditorPadding = false;
+            this.ribbonControl.Size = new System.Drawing.Size(648, 108);
+            this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // myDataLayoutControl1
             // 
@@ -101,17 +108,14 @@
             this.myDataLayoutControl1.Controls.Add(this.txtSayi3);
             this.myDataLayoutControl1.Controls.Add(this.txtSayi2);
             this.myDataLayoutControl1.Controls.Add(this.txtSayi1);
-            this.myDataLayoutControl1.Controls.Add(this.tglSayiGiris);
             this.myDataLayoutControl1.Controls.Add(this.lstIslemler);
-            this.myDataLayoutControl1.Controls.Add(this.btnBasla);
-            this.myDataLayoutControl1.Controls.Add(this.btnSayiOlustur);
             this.myDataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.myDataLayoutControl1.Location = new System.Drawing.Point(0, 85);
+            this.myDataLayoutControl1.Location = new System.Drawing.Point(0, 108);
             this.myDataLayoutControl1.Name = "myDataLayoutControl1";
             this.myDataLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 120, 650, 400);
             this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl1.Root = this.Root;
-            this.myDataLayoutControl1.Size = new System.Drawing.Size(648, 283);
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(648, 238);
             this.myDataLayoutControl1.TabIndex = 1;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
             // 
@@ -290,24 +294,6 @@
             this.txtSayi1.StyleController = this.myDataLayoutControl1;
             this.txtSayi1.TabIndex = 18;
             // 
-            // tglSayiGiris
-            // 
-            this.tglSayiGiris.EnterMoveNextControl = true;
-            this.tglSayiGiris.Location = new System.Drawing.Point(565, 34);
-            this.tglSayiGiris.Name = "tglSayiGiris";
-            this.tglSayiGiris.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic);
-            this.tglSayiGiris.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.tglSayiGiris.Properties.Appearance.Options.UseFont = true;
-            this.tglSayiGiris.Properties.Appearance.Options.UseForeColor = true;
-            this.tglSayiGiris.Properties.AutoHeight = false;
-            this.tglSayiGiris.Properties.AutoWidth = true;
-            this.tglSayiGiris.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.tglSayiGiris.Properties.OffText = "Pasif";
-            this.tglSayiGiris.Properties.OnText = "Aktif";
-            this.tglSayiGiris.Size = new System.Drawing.Size(80, 24);
-            this.tglSayiGiris.StyleController = this.myDataLayoutControl1;
-            this.tglSayiGiris.TabIndex = 17;
-            // 
             // lstIslemler
             // 
             this.lstIslemler.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -317,59 +303,17 @@
             this.lstIslemler.ItemAutoHeight = true;
             this.lstIslemler.Location = new System.Drawing.Point(12, 62);
             this.lstIslemler.Name = "lstIslemler";
-            this.lstIslemler.Size = new System.Drawing.Size(146, 209);
+            this.lstIslemler.Size = new System.Drawing.Size(146, 164);
             this.lstIslemler.StyleController = this.myDataLayoutControl1;
             this.lstIslemler.TabIndex = 16;
-            // 
-            // btnBasla
-            // 
-            this.btnBasla.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.btnBasla.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.btnBasla.Appearance.Options.UseFont = true;
-            this.btnBasla.Appearance.Options.UseForeColor = true;
-            this.btnBasla.AppearanceHovered.BackColor = System.Drawing.Color.LightCyan;
-            this.btnBasla.AppearanceHovered.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnBasla.AppearanceHovered.Options.UseBackColor = true;
-            this.btnBasla.AppearanceHovered.Options.UseForeColor = true;
-            this.btnBasla.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
-            this.btnBasla.AppearancePressed.Options.UseForeColor = true;
-            this.btnBasla.Location = new System.Drawing.Point(490, 112);
-            this.btnBasla.Name = "btnBasla";
-            this.btnBasla.Size = new System.Drawing.Size(146, 46);
-            this.btnBasla.StyleController = this.myDataLayoutControl1;
-            this.btnBasla.TabIndex = 15;
-            this.btnBasla.Text = "BAŞLA";
-            this.btnBasla.Click += new System.EventHandler(this.btnBasla_Click);
-            // 
-            // btnSayiOlustur
-            // 
-            this.btnSayiOlustur.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.btnSayiOlustur.Appearance.ForeColor = System.Drawing.Color.Maroon;
-            this.btnSayiOlustur.Appearance.Options.UseFont = true;
-            this.btnSayiOlustur.Appearance.Options.UseForeColor = true;
-            this.btnSayiOlustur.AppearanceHovered.BackColor = System.Drawing.Color.LightCyan;
-            this.btnSayiOlustur.AppearanceHovered.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnSayiOlustur.AppearanceHovered.Options.UseBackColor = true;
-            this.btnSayiOlustur.AppearanceHovered.Options.UseForeColor = true;
-            this.btnSayiOlustur.AppearancePressed.ForeColor = System.Drawing.Color.Maroon;
-            this.btnSayiOlustur.AppearancePressed.Options.UseForeColor = true;
-            this.btnSayiOlustur.Location = new System.Drawing.Point(490, 62);
-            this.btnSayiOlustur.Name = "btnSayiOlustur";
-            this.btnSayiOlustur.Size = new System.Drawing.Size(146, 46);
-            this.btnSayiOlustur.StyleController = this.myDataLayoutControl1;
-            this.btnSayiOlustur.TabIndex = 14;
-            this.btnSayiOlustur.Text = "Sayı Oluştur";
-            this.btnSayiOlustur.Click += new System.EventHandler(this.btnSayiOlustur_Click);
             // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root.GroupBordersVisible = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem9,
             this.layoutControlItem10,
             this.layoutControlItem11,
-            this.layoutControlItem8,
             this.layoutControlItem1,
             this.layoutControlItem2,
             this.layoutControlItem3,
@@ -423,29 +367,8 @@
             rowDefinition3,
             rowDefinition4,
             rowDefinition5});
-            this.Root.Size = new System.Drawing.Size(648, 283);
+            this.Root.Size = new System.Drawing.Size(648, 238);
             this.Root.TextVisible = false;
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem9.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem9.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem9.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem9.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem9.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem9.Control = this.btnSayiOlustur;
-            this.layoutControlItem9.Location = new System.Drawing.Point(478, 50);
-            this.layoutControlItem9.MinSize = new System.Drawing.Size(182, 32);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.OptionsTableLayoutItem.ColumnIndex = 7;
-            this.layoutControlItem9.OptionsTableLayoutItem.ColumnSpan = 2;
-            this.layoutControlItem9.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem9.Size = new System.Drawing.Size(150, 50);
-            this.layoutControlItem9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
             // 
             // layoutControlItem10
             // 
@@ -455,7 +378,6 @@
             this.layoutControlItem10.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem10.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem10.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem10.Control = this.btnBasla;
             this.layoutControlItem10.Location = new System.Drawing.Point(478, 100);
             this.layoutControlItem10.MinSize = new System.Drawing.Size(182, 32);
             this.layoutControlItem10.Name = "layoutControlItem10";
@@ -483,28 +405,11 @@
             this.layoutControlItem11.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItem11.OptionsTableLayoutItem.RowIndex = 1;
             this.layoutControlItem11.OptionsTableLayoutItem.RowSpan = 4;
-            this.layoutControlItem11.Size = new System.Drawing.Size(150, 213);
+            this.layoutControlItem11.Size = new System.Drawing.Size(150, 168);
             this.layoutControlItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem11.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem8.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem8.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem8.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem8.Control = this.tglSayiGiris;
-            this.layoutControlItem8.Location = new System.Drawing.Point(553, 0);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.OptionsTableLayoutItem.ColumnIndex = 8;
-            this.layoutControlItem8.Size = new System.Drawing.Size(75, 50);
-            this.layoutControlItem8.Text = "Giriş";
-            this.layoutControlItem8.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(49, 19);
             // 
             // layoutControlItem1
             // 
@@ -634,7 +539,9 @@
             this.Name = "IslemKarti";
             this.Text = "İşlem Kartı";
             this.Load += new System.EventHandler(this.IslemKarti_Load);
+            this.Controls.SetChildIndex(this.ribbonControl, 0);
             this.Controls.SetChildIndex(this.myDataLayoutControl1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).EndInit();
             this.myDataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtHedef.Properties)).EndInit();
@@ -644,13 +551,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtSayi3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSayi2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSayi1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tglSayiGiris.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstIslemler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
@@ -659,6 +563,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -666,14 +571,9 @@
 
         private UserControls.Controls.MyDataLayoutControl myDataLayoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
-        private UserControls.Controls.MySimpleButton btnSayiOlustur;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private UserControls.Controls.MySimpleButton btnBasla;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private UserControls.Controls.MyListBoxControl lstIslemler;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
-        private UserControls.Controls.MyToggleSwitch tglSayiGiris;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private UserControls.MyNumericTextEdit txtSayi6;
         private UserControls.MyNumericTextEdit txtSayi5;
         private UserControls.MyNumericTextEdit txtSayi4;

@@ -11,13 +11,16 @@ using DevExpress.XtraEditors;
 
 namespace BirKelimeBirIslem.UI.Win.Forms.Base
 {
-    public partial class BaseForm : DevExpress.XtraEditors.XtraForm
+    public partial class BaseForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public BaseForm()
         {
             InitializeComponent();
         }
 
-       
+        private void BaseForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
