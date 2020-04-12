@@ -13,19 +13,20 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
         private List<int> harfmiktar { get; set; }
         private int max { get; set; }
 
-        internal Kelime_Anlam bulunankelimeler { get; set; }
+        internal List<Kelime_Anlam> bulunankelimeler { get; set; }
 
-        public KelimeAra(Kelime_Anlam _liste, List<char> _harfler)
+        public KelimeAra(List<Kelime_Anlam> _liste, List<string> _harfler)
         {
             int adet = 0;
             int sira = -1;
             max = 0;
 
             harfmiktar = new List<int>();
+            bulunankelimeler = new List<Kelime_Anlam>();
 
-            foreach (var item in _liste.Kelime)
+            foreach (var item in _liste)
             {
-                string kelime = item.ToString();
+                string kelime = item.Kelime.ToUpper().Trim().ToString();
                 adet = 0;
                 foreach (var item2 in _harfler)
                 {
@@ -34,7 +35,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
                     if (sira != -1)
                     {
                         adet++;
-                        kelime.Remove(sira, 1);
+                        kelime= kelime.Remove(sira, 1);
                         sira = -1;
                     }
                 }
@@ -44,26 +45,57 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
             VerileriIsle(_liste);
         }
 
-        private void VerileriIsle(Kelime_Anlam _liste)
+        private void VerileriIsle(List<Kelime_Anlam> _liste)
         {
-            for (int i = 0; i <= harfmiktar.Count; i++)
+            foreach (var item in _liste.Select((value, i) => new { i, value }))
             {
-                if(harfmiktar[i]==max)
+                if (harfmiktar[item.i] == max)
                 {
-                    bulunankelimeler.Kelime.Append(_liste.Kelime[i]);
-                    bulunankelimeler.Anlam.Append(_liste.Anlam[i]);
+                    bulunankelimeler.Add(new Kelime_Anlam() { Kelime_ID = item.value.Kelime_ID, Kelime = item.value.Kelime, Anlam = item.value.Anlam });
                 }
             }       
         }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            foreach (var item in bulunankelimeler.Anlam)
+            foreach (var item in bulunankelimeler)
             {
-                sb.Append(item + bulunankelimeler.Anlam[item]);         
+                sb.Append(item.Kelime + " --> " + item.Anlam);
             }
-          
+
+            string puan;
+            switch (max)
+            {
+                case 9:
+                    puan = "Alınan Puan: 15" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                case 8:
+                    puan = "Alınan Puan: 11" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                case 7:
+                    puan = "Alınan Puan: 9" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                case 6:
+                    puan = "Alınan Puan: 7" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                case 5:
+                    puan = "Alınan Puan: 5" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                case 4:
+                    puan = "Alınan Puan: 4" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                case 3:
+                    puan = "Alınan Puan: 3" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                case 2:
+                    puan = "Alınan Puan: 1" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+                default:
+                    puan = "Alınan Puan: 15" + Environment.NewLine + max + "( Harf Eşleşti.)";
+                    break;
+            }
+            sb.Append(puan);
             return sb.ToString();
         }
-    }    
+    }
 }
