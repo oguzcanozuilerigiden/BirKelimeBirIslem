@@ -14,7 +14,6 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             Appearance.ForeColor = Color.Maroon;
             //Appearance.BackColor = Color.Maroon;
             Appearance.TextOptions.HAlignment = HorzAlignment.Near;
-            ItemAutoHeight = true;
         }
     }
 }

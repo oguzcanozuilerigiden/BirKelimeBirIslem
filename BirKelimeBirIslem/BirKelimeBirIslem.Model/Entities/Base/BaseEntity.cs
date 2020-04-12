@@ -3,7 +3,5 @@
     public class BaseEntity
     {
         public int Kelime_ID { get; set; }
-
-        public string Kelime { get; set; }
     }
 }

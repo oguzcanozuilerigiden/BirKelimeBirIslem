@@ -72,6 +72,8 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
 
                 st.Start();
                 var ifd = oyunayarlari.Basla();
+                int adet = ifd.ToString().ToCharArray().Count(c => c == '=');
+                lstIslemler.ItemHeight = (adet + 1) * 15;
                 st.Stop();
                 lblSure.Text = st.Elapsed.Seconds + ":" + st.Elapsed.Milliseconds;
                 lstIslemler.Items.Add(ifd.ToString());
