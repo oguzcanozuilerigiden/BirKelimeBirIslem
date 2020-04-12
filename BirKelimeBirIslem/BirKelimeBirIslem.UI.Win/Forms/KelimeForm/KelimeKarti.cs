@@ -71,21 +71,21 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
             try
             {
                 lstKelime.Items.Clear();
-                kelimeayarlari.Harfler[0] = txtHarf1.Text[1];
-                kelimeayarlari.Harfler[1] = txtHarf2.Text[1];
-                kelimeayarlari.Harfler[2] = txtHarf3.Text[1];
-                kelimeayarlari.Harfler[3] = txtHarf4.Text[1];
-                kelimeayarlari.Harfler[4] = txtHarf5.Text[1];
-                kelimeayarlari.Harfler[5] = txtHarf6.Text[1];
-                kelimeayarlari.Harfler[6] = txtHarf7.Text[1];
-                kelimeayarlari.Harfler[7] = txtHarf8.Text[1];
-                kelimeayarlari.Harfler[8] = txtJoker.Text[1];
+                kelimeayarlari.Harfler[0] = txtHarf1.Text;
+                kelimeayarlari.Harfler[1] = txtHarf2.Text;
+                kelimeayarlari.Harfler[2] = txtHarf3.Text;
+                kelimeayarlari.Harfler[3] = txtHarf4.Text;
+                kelimeayarlari.Harfler[4] = txtHarf5.Text;
+                kelimeayarlari.Harfler[5] = txtHarf6.Text;
+                kelimeayarlari.Harfler[6] = txtHarf7.Text;
+                kelimeayarlari.Harfler[7] = txtHarf8.Text;
+                kelimeayarlari.Harfler[8] = txtJoker.Text;
 
                 st.Start();
                 var ifd = kelimeayarlari.Basla();
                 
                 //    int adet = ifd.ToString().ToCharArray().Count(c => c == '=');
-                //    lstIslemler.ItemHeight = (adet + 1) * 15;
+                //    lstIslemler.ItemHeight = 
                 st.Stop();
                 lblSure.Text = st.Elapsed.Seconds + ":" + st.Elapsed.Milliseconds;
                 lstKelime.Items.Add(ifd.ToString());
