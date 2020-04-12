@@ -37,14 +37,9 @@
             DevExpress.XtraLayout.ColumnDefinition columnDefinition7 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition8 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.ColumnDefinition columnDefinition9 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition10 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
             this.myDataLayoutControl1 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyDataLayoutControl();
-            this.BtnDosya = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyButtonEdit();
             this.lstKelime = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyListBoxControl();
             this.txtJoker = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyCharTextEdit();
             this.txtHarf8 = new BirKelimeBirIslem.UI.Win.UserControls.Controls.MyCharTextEdit();
@@ -65,13 +60,14 @@
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).BeginInit();
             this.myDataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnDosya.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstKelime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJoker.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarf8.Properties)).BeginInit();
@@ -92,14 +88,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
+            this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barButtonItem2});
+            this.ribbonControl.MaxItemId = 33;
             // 
             // 
             // 
@@ -114,7 +113,6 @@
             // myDataLayoutControl1
             // 
             this.myDataLayoutControl1.BackColor = System.Drawing.Color.Transparent;
-            this.myDataLayoutControl1.Controls.Add(this.BtnDosya);
             this.myDataLayoutControl1.Controls.Add(this.lstKelime);
             this.myDataLayoutControl1.Controls.Add(this.txtJoker);
             this.myDataLayoutControl1.Controls.Add(this.txtHarf8);
@@ -130,24 +128,9 @@
             this.myDataLayoutControl1.Name = "myDataLayoutControl1";
             this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl1.Root = this.Root;
-            this.myDataLayoutControl1.Size = new System.Drawing.Size(698, 238);
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(698, 269);
             this.myDataLayoutControl1.TabIndex = 2;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
-            // 
-            // BtnDosya
-            // 
-            this.BtnDosya.EnterMoveNextControl = true;
-            this.BtnDosya.Location = new System.Drawing.Point(537, 84);
-            this.BtnDosya.Name = "BtnDosya";
-            this.BtnDosya.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
-            this.BtnDosya.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.BtnDosya.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.BtnDosya.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.BtnDosya.Size = new System.Drawing.Size(146, 20);
-            this.BtnDosya.StyleController = this.myDataLayoutControl1;
-            this.BtnDosya.TabIndex = 17;
-            this.BtnDosya.Click += new System.EventHandler(this.BtnDosya_Click);
             // 
             // lstKelime
             // 
@@ -158,7 +141,7 @@
             this.lstKelime.ItemAutoHeight = true;
             this.lstKelime.Location = new System.Drawing.Point(12, 62);
             this.lstKelime.Name = "lstKelime";
-            this.lstKelime.Size = new System.Drawing.Size(296, 164);
+            this.lstKelime.Size = new System.Drawing.Size(446, 195);
             this.lstKelime.StyleController = this.myDataLayoutControl1;
             this.lstKelime.TabIndex = 16;
             // 
@@ -183,7 +166,7 @@
             this.txtJoker.Properties.NullText = "A";
             this.txtJoker.Properties.NullValuePrompt = "A";
             this.txtJoker.Properties.ReadOnly = true;
-            this.txtJoker.Size = new System.Drawing.Size(71, 22);
+            this.txtJoker.Size = new System.Drawing.Size(74, 22);
             this.txtJoker.StyleController = this.myDataLayoutControl1;
             this.txtJoker.TabIndex = 12;
             // 
@@ -401,9 +384,7 @@
             this.layoutControlItem7,
             this.layoutControlItem8,
             this.layoutControlItem9,
-            this.layoutControlItem11,
-            this.layoutControlItem12,
-            this.layoutControlItem13});
+            this.layoutControlItem12});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
             columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
@@ -422,10 +403,8 @@
             columnDefinition7.Width = 75D;
             columnDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
             columnDefinition8.Width = 75D;
-            columnDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition9.Width = 75D;
-            columnDefinition10.SizeType = System.Windows.Forms.SizeType.Percent;
-            columnDefinition10.Width = 100D;
+            columnDefinition9.SizeType = System.Windows.Forms.SizeType.Percent;
+            columnDefinition9.Width = 100D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
             columnDefinition1,
             columnDefinition2,
@@ -435,25 +414,15 @@
             columnDefinition6,
             columnDefinition7,
             columnDefinition8,
-            columnDefinition9,
-            columnDefinition10});
+            columnDefinition9});
             rowDefinition1.Height = 50D;
             rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition2.Height = 50D;
-            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition3.Height = 50D;
-            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition4.Height = 50D;
-            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition5.Height = 100D;
-            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Percent;
+            rowDefinition2.Height = 100D;
+            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Percent;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
             rowDefinition1,
-            rowDefinition2,
-            rowDefinition3,
-            rowDefinition4,
-            rowDefinition5});
-            this.Root.Size = new System.Drawing.Size(698, 238);
+            rowDefinition2});
+            this.Root.Size = new System.Drawing.Size(698, 269);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -603,30 +572,10 @@
             this.layoutControlItem9.Location = new System.Drawing.Point(600, 0);
             this.layoutControlItem9.Name = "layoutControlItem9";
             this.layoutControlItem9.OptionsTableLayoutItem.ColumnIndex = 8;
-            this.layoutControlItem9.Size = new System.Drawing.Size(75, 50);
+            this.layoutControlItem9.Size = new System.Drawing.Size(78, 50);
             this.layoutControlItem9.Text = "Joker";
             this.layoutControlItem9.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(50, 19);
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem11.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem11.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem11.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem11.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem11.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem11.Location = new System.Drawing.Point(525, 150);
-            this.layoutControlItem11.MinSize = new System.Drawing.Size(182, 32);
-            this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.OptionsTableLayoutItem.ColumnIndex = 7;
-            this.layoutControlItem11.OptionsTableLayoutItem.ColumnSpan = 2;
-            this.layoutControlItem11.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem11.Size = new System.Drawing.Size(150, 50);
-            this.layoutControlItem11.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem11.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem11.TextVisible = false;
             // 
             // layoutControlItem12
             // 
@@ -639,41 +588,41 @@
             this.layoutControlItem12.Control = this.lstKelime;
             this.layoutControlItem12.Location = new System.Drawing.Point(0, 50);
             this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.OptionsTableLayoutItem.ColumnSpan = 4;
+            this.layoutControlItem12.OptionsTableLayoutItem.ColumnSpan = 6;
             this.layoutControlItem12.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem12.OptionsTableLayoutItem.RowSpan = 4;
-            this.layoutControlItem12.Size = new System.Drawing.Size(300, 168);
+            this.layoutControlItem12.Size = new System.Drawing.Size(450, 199);
             this.layoutControlItem12.TextLocation = DevExpress.Utils.Locations.Top;
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
-            // layoutControlItem13
+            // ribbonPageGroup1
             // 
-            this.layoutControlItem13.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem13.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem13.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem13.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem13.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem13.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem13.Control = this.BtnDosya;
-            this.layoutControlItem13.Location = new System.Drawing.Point(525, 50);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.OptionsTableLayoutItem.ColumnIndex = 7;
-            this.layoutControlItem13.OptionsTableLayoutItem.ColumnSpan = 2;
-            this.layoutControlItem13.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem13.Size = new System.Drawing.Size(150, 50);
-            this.layoutControlItem13.Text = "Dosya";
-            this.layoutControlItem13.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(50, 19);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // repositoryItemButtonEdit1
+            // 
+            this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Id = 31;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "barButtonItem2";
+            this.barButtonItem2.Id = 32;
+            this.barButtonItem2.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.exporttoxls_32x32;
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // KelimeKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 368);
+            this.ClientSize = new System.Drawing.Size(698, 399);
             this.Controls.Add(this.myDataLayoutControl1);
             this.IconOptions.ShowIcon = false;
-            this.MinimumSize = new System.Drawing.Size(700, 369);
+            this.MinimumSize = new System.Drawing.Size(700, 400);
             this.Name = "KelimeKarti";
             this.Text = "Kelime Kartı";
             this.Load += new System.EventHandler(this.KelimeKarti_Load);
@@ -682,7 +631,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).EndInit();
             this.myDataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnDosya.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstKelime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJoker.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHarf8.Properties)).EndInit();
@@ -703,9 +651,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -734,9 +681,10 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private UserControls.Controls.MyListBoxControl lstKelime;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
-        private UserControls.Controls.MyButtonEdit BtnDosya;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }

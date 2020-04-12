@@ -173,6 +173,14 @@
   <ItemGroup>
     <Content Include="Images\backgroung.jpg" />
     <Content Include="Images\logo.jpg" />
+    <None Include="Resources\exporttoxls_32x323.png" />
+    <None Include="Resources\exporttoxls_16x163.png" />
+    <None Include="Resources\exporttoxls_32x322.png" />
+    <None Include="Resources\exporttoxls_16x162.png" />
+    <None Include="Resources\exporttoxls_32x321.png" />
+    <None Include="Resources\exporttoxls_16x161.png" />
+    <None Include="Resources\exporttoxls_32x32.png" />
+    <None Include="Resources\exporttoxls_16x16.png" />
     <None Include="Resources\comment_16x16.png" />
     <None Include="Resources\suggestion_16x16.png" />
     <None Include="Resources\time_32x32.png" />

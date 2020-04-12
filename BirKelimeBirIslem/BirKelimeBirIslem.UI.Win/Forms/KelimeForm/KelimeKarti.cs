@@ -14,43 +14,76 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
             btnBasla.ItemClick += BtnBasla_ItemClick;
             btnOlustur.ItemClick += BtnOlustur_ItemClick;
             tglGiris.ItemClick += TglGiris_ItemClick;
+            btnDosya.ItemClick += BtnDosya_ItemClick;      
+        }        
+
+        KelimeAyarlari kelimeayarlari;
+
+        private DateTime _startTime = DateTime.Now;
+        private TimeSpan _timeSpan = new TimeSpan(0, 1, 0);  // 1 minute 10 seconds as total time
+        System.Diagnostics.Stopwatch st = new System.Diagnostics.Stopwatch();
+
+        private bool VeriKontrol()
+        {
+            if (kelimeayarlari == null)
+            {
+                XtraMessageBox.Show("Veri Seçimi Yapınız!", "Bilgilendirme", MessageBoxButtons.OK);
+                return false;
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(txtHarf1.Text)) txtHarf1.Text = "A";
+                if (string.IsNullOrEmpty(txtHarf2.Text)) txtHarf2.Text = "A";
+                if (string.IsNullOrEmpty(txtHarf3.Text)) txtHarf3.Text = "A";
+                if (string.IsNullOrEmpty(txtHarf4.Text)) txtHarf4.Text = "A";
+                if (string.IsNullOrEmpty(txtHarf5.Text)) txtHarf5.Text = "A";
+                if (string.IsNullOrEmpty(txtHarf6.Text)) txtHarf6.Text = "A";
+                if (string.IsNullOrEmpty(txtHarf7.Text)) txtHarf7.Text = "A";
+                if (string.IsNullOrEmpty(txtHarf8.Text)) txtHarf8.Text = "A";
+                if (string.IsNullOrEmpty(txtJoker.Text)) txtJoker.Text = "A";
+                return true;
+            }
+        }
+
+        private void KelimeKarti_Load(object sender, System.EventArgs e)
+        {
+            lblSure.Caption = "00:00";
         }
 
         private void TglGiris_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //try
-            //{
-            //    if (tglGiris.)
-            //    {
-            //        txtHarf1.ReadOnly = false;
-            //        txtHarf2.ReadOnly = false;
-            //        txtHarf3.ReadOnly = false;
-            //        txtHarf4.ReadOnly = false;
-            //        txtHarf5.ReadOnly = false;
-            //        txtHarf6.ReadOnly = false;
-            //        txtHarf7.ReadOnly = false;
-            //        txtHarf8.ReadOnly = false;
-            //        txtJoker.ReadOnly = false;
-            //    }
-            //    else
-            //    {
-            //        txtHarf1.ReadOnly = true;
-            //        txtHarf2.ReadOnly = true;
-            //        txtHarf3.ReadOnly = true;
-            //        txtHarf4.ReadOnly = true;
-            //        txtHarf5.ReadOnly = true;
-            //        txtHarf6.ReadOnly = true;
-            //        txtHarf7.ReadOnly = true;
-            //        txtHarf8.ReadOnly = true;
-            //        txtJoker.ReadOnly = true;
-            //    }
-            //}
-            //catch (Exception)
-            //{
-            //    throw;
-            //}
+            try
+            {
+                if (tglGiris.Checked)
+                {
+                    txtHarf1.ReadOnly = false;
+                    txtHarf2.ReadOnly = false;
+                    txtHarf3.ReadOnly = false;
+                    txtHarf4.ReadOnly = false;
+                    txtHarf5.ReadOnly = false;
+                    txtHarf6.ReadOnly = false;
+                    txtHarf7.ReadOnly = false;
+                    txtHarf8.ReadOnly = false;
+                    txtJoker.ReadOnly = false;
+                }
+                else
+                {
+                    txtHarf1.ReadOnly = true;
+                    txtHarf2.ReadOnly = true;
+                    txtHarf3.ReadOnly = true;
+                    txtHarf4.ReadOnly = true;
+                    txtHarf5.ReadOnly = true;
+                    txtHarf6.ReadOnly = true;
+                    txtHarf7.ReadOnly = true;
+                    txtHarf8.ReadOnly = true;
+                    txtJoker.ReadOnly = true;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
-
 
         private void BtnBasla_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -109,40 +142,27 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
             }
         }
 
-        KelimeAyarlari kelimeayarlari;
-
-        private DateTime _startTime = DateTime.Now; // Set the starting time
-        private TimeSpan _timeSpan = new TimeSpan(0, 1, 0);  // 1 minute 10 seconds as total time
-        System.Diagnostics.Stopwatch st = new System.Diagnostics.Stopwatch();
-
-        private bool VeriKontrol()
+        private void BtnDosya_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (kelimeayarlari == null)
+            try
             {
-                XtraMessageBox.Show("Veri Seçimi Yapınız!", "Bilgilendirme", MessageBoxButtons.OK);
-                return false;
+                XtraOpenFileDialog dosya = new XtraOpenFileDialog();
+                dosya.Filter = "Excel Dosyası |*.xls;*.xlsx";
+                dosya.Title = "Excel Dosyası Seçiniz.";
+                dosya.FilterIndex = 2;
+                dosya.RestoreDirectory = true;
+                dosya.ShowDialog();
+
+                kelimeayarlari = new KelimeAyarlari(dosya.FileName);
+                if (kelimeayarlari != null) XtraMessageBox.Show("Veriler Başarıyla Yüklendi", "Bilgilendirme", MessageBoxButtons.OK);
+                else XtraMessageBox.Show("Veri Yükleme Hatası!", "Bilgilendirme", MessageBoxButtons.OK);
+
             }
-            return true;
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
-
-        private void KelimeKarti_Load(object sender, System.EventArgs e)
-        {
-            lblSure.Caption = "00:00";
-        }
-
-        private void BtnDosya_Click(object sender, System.EventArgs e)
-        {
-            XtraOpenFileDialog dosya = new XtraOpenFileDialog();
-            dosya.Filter = "Excel Dosyası |*.xls;*.xlsx";
-            dosya.Title = "Excel Dosyası Seçiniz.";
-            dosya.FilterIndex = 2;
-            dosya.RestoreDirectory = true;
-            dosya.ShowDialog();
-            BtnDosya.Text = dosya.SafeFileName;
-
-            kelimeayarlari = new KelimeAyarlari(dosya.FileName);
-        }
-
-
     }
 }
