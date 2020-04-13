@@ -1,7 +1,6 @@
 ﻿using BirKelimeBirIslem.UI.Win.Classes;
 using BirKelimeBirIslem.UI.Win.Forms.Base;
 using System;
-using System.Linq;
 
 namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
 {
