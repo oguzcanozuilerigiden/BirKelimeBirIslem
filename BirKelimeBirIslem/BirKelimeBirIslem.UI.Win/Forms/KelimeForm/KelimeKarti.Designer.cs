@@ -61,7 +61,6 @@
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -148,7 +147,7 @@
             // 
             // txtJoker
             // 
-            this.txtJoker.EditValue = "A";
+            this.txtJoker.EditValue = "A-Z";
             this.txtJoker.EnterMoveNextControl = true;
             this.txtJoker.Location = new System.Drawing.Point(612, 34);
             this.txtJoker.Name = "txtJoker";
@@ -596,10 +595,6 @@
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            // 
             // repositoryItemButtonEdit1
             // 
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
@@ -684,7 +679,6 @@
         private UserControls.Controls.MyListBoxControl lstKelime;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }

@@ -4,9 +4,10 @@ using System.Text;
 
 namespace BirKelimeBirIslem.UI.Win.Classes
 {
-    class OyunAyarlari
+    public class OyunAyarlari
     {
         #region Properties
+
         Random rnd { get; set; }
 
         public int IkiBasamakli { get; set; }

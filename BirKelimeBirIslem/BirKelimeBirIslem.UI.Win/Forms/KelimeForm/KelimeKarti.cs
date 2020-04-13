@@ -41,7 +41,6 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
                 if (string.IsNullOrEmpty(txtHarf6.Text)) txtHarf6.Text = "A";
                 if (string.IsNullOrEmpty(txtHarf7.Text)) txtHarf7.Text = "A";
                 if (string.IsNullOrEmpty(txtHarf8.Text)) txtHarf8.Text = "A";
-                if (string.IsNullOrEmpty(txtJoker.Text)) txtJoker.Text = "A";
                 return true;
             }
         }
@@ -65,7 +64,6 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
                     txtHarf6.ReadOnly = false;
                     txtHarf7.ReadOnly = false;
                     txtHarf8.ReadOnly = false;
-                    txtJoker.ReadOnly = false;
                 }
                 else
                 {
@@ -77,7 +75,6 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
                     txtHarf6.ReadOnly = true;
                     txtHarf7.ReadOnly = true;
                     txtHarf8.ReadOnly = true;
-                    txtJoker.ReadOnly = true;
                 }
             }
             catch (Exception)
@@ -101,7 +98,6 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
                     kelimeayarlari.Harfler[5] = txtHarf6.Text;
                     kelimeayarlari.Harfler[6] = txtHarf7.Text;
                     kelimeayarlari.Harfler[7] = txtHarf8.Text;
-                    kelimeayarlari.Harfler[8] = txtJoker.Text;
 
                     st.Start();
                     var ifd = kelimeayarlari.Basla();
@@ -137,7 +133,6 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
                     txtHarf6.Text = kelimeayarlari.Harfler[5].ToString();
                     txtHarf7.Text = kelimeayarlari.Harfler[6].ToString();
                     txtHarf8.Text = kelimeayarlari.Harfler[7].ToString();
-                    txtJoker.Text = kelimeayarlari.Harfler[8].ToString();
                 }
             }
             catch (Exception)

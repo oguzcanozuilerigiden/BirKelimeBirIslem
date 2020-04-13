@@ -5,7 +5,7 @@ using static BirKelimeBirIslem.UI.Win.Classes.Islem.Enums.Enum;
 
 namespace BirKelimeBirIslem.UI.Win.Classes
 {
-    class Cozum
+    public class Cozum
     {
         #region Properties
         public List<int> TumSayilar { get; private set; }
@@ -40,7 +40,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
                 Hesapla _denklem = new Hesapla(TumSayilar[i]);
                 List<int> arttikliste = KisaListeOlustur(TumSayilar, i);
                 if (CozumAra(_denklem, arttikliste))
-                    break;
+                    break;                
             }
         }
 

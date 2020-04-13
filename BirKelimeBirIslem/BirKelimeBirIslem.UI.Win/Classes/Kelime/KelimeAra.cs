@@ -27,7 +27,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 
             harfmiktar = new List<int>();
             bulunankelimeler = new List<Kelime_Anlam>();
-            List<Kelime_Anlam> aramasonuc= new List<Kelime_Anlam>();
+            List<Kelime_Anlam> aramasonuc = new List<Kelime_Anlam>();
 
             foreach (var item in _liste)
             {
@@ -44,8 +44,9 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
                         sira = -1;
                     }
                 }
-                if (kelime.Count() == 0)
+                if (kelime.Count() <= 1)
                 {
+                    if (kelime.Count() == 1) adet++;
                     if (adet > max) max = adet;
                     harfmiktar.Add(adet);
                     aramasonuc.Add(new Kelime_Anlam { Kelime_ID = item.Kelime_ID, Kelime = item.Kelime, Anlam = item.Anlam });
@@ -65,7 +66,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
                     bulunankelimeler.Add(new Kelime_Anlam { Kelime_ID = item.value.Kelime_ID, Kelime = item.value.Kelime, Anlam = item.value.Anlam });
                 }
             }
-        } 
+        }
         #endregion
 
         #region ToString
@@ -78,10 +79,10 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
             }
             string ifade;
             switch (max)
-            {                
+            {
                 case 9:
                     puan = 15;
-                    ifade = "Alınan Puan: 15" + Environment.NewLine +"( "+ max + " Harf Eşleşti.)";
+                    ifade = "Alınan Puan: 15" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 case 8:
                     puan = 11;
@@ -118,7 +119,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
             }
             sb.Append(ifade);
             return sb.ToString();
-        } 
+        }
         #endregion
     }
 }

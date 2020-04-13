@@ -5,17 +5,18 @@ using static BirKelimeBirIslem.UI.Win.Classes.Islem.Enums.Enum;
 
 namespace BirKelimeBirIslem.UI.Win.Classes
 {
-    class Hesapla
+    public class Hesapla:OyunAyarlari
     {
         #region Properties
         private List<int> SiradakiSayi { get; set; }
 
         private List<Islem_Isaret> Operatorler { get; set; }
-
+        
         public int DegerHesapla
         {
+            
             get
-            {
+            {                
                 int deger = SiradakiSayi[0];
                 for (int i = 1; i < SiradakiSayi.Count; i++)
                 {

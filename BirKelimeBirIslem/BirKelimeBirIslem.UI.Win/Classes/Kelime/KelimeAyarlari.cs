@@ -58,7 +58,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
             List<string> karakter = new List<string>() { "A", "B", "C","Ç", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z" };
 
             List<string> harfler = new List<string>();
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 8; i++)
             {
                 harfler.Add(karakter[rnd.Next(1, karakter.Count)]);
             }
