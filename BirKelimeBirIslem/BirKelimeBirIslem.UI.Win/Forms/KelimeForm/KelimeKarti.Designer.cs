@@ -138,6 +138,7 @@
             this.lstKelime.Appearance.Options.UseForeColor = true;
             this.lstKelime.Appearance.Options.UseTextOptions = true;
             this.lstKelime.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lstKelime.HorizontalScrollbar = true;
             this.lstKelime.ItemAutoHeight = true;
             this.lstKelime.Location = new System.Drawing.Point(12, 62);
             this.lstKelime.Name = "lstKelime";
@@ -160,7 +161,7 @@
             this.txtJoker.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtJoker.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtJoker.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtJoker.Properties.Mask.EditMask = "[A-Z]";
+            this.txtJoker.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtJoker.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtJoker.Properties.MaxLength = 1;
             this.txtJoker.Properties.NullText = "A";
@@ -185,7 +186,7 @@
             this.txtHarf8.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf8.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf8.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf8.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf8.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf8.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf8.Properties.MaxLength = 1;
             this.txtHarf8.Properties.NullText = "A";
@@ -210,7 +211,7 @@
             this.txtHarf7.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf7.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf7.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf7.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf7.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf7.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf7.Properties.MaxLength = 1;
             this.txtHarf7.Properties.NullText = "A";
@@ -235,7 +236,7 @@
             this.txtHarf6.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf6.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf6.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf6.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf6.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf6.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf6.Properties.MaxLength = 1;
             this.txtHarf6.Properties.NullText = "A";
@@ -260,7 +261,7 @@
             this.txtHarf5.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf5.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf5.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf5.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf5.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf5.Properties.MaxLength = 1;
             this.txtHarf5.Properties.NullText = "A";
@@ -285,7 +286,7 @@
             this.txtHarf4.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf4.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf4.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf4.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf4.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf4.Properties.MaxLength = 1;
             this.txtHarf4.Properties.NullText = "A";
@@ -310,7 +311,7 @@
             this.txtHarf3.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf3.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf3.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf3.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf3.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf3.Properties.MaxLength = 1;
             this.txtHarf3.Properties.NullText = "A";
@@ -335,7 +336,7 @@
             this.txtHarf2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf2.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf2.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf2.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf2.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf2.Properties.MaxLength = 1;
             this.txtHarf2.Properties.NullText = "A";
@@ -360,7 +361,7 @@
             this.txtHarf1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtHarf1.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtHarf1.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtHarf1.Properties.Mask.EditMask = "[A-Z]";
+            this.txtHarf1.Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             this.txtHarf1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtHarf1.Properties.MaxLength = 1;
             this.txtHarf1.Properties.NullText = "A";

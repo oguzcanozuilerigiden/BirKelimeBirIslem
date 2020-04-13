@@ -18,6 +18,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
         }        
 
         KelimeAyarlari kelimeayarlari;
+        XtraOpenFileDialog dosya = new XtraOpenFileDialog();
 
         private DateTime _startTime = DateTime.Now;
         private TimeSpan _timeSpan = new TimeSpan(0, 1, 0);  // 1 minute 10 seconds as total time
@@ -107,6 +108,9 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
                     st.Stop();
                     lblSure.Caption = st.Elapsed.Seconds + ":" + st.Elapsed.Milliseconds;
                     lstKelime.Items.Add(ifd.ToString());
+                    lblPuan.Caption = ifd.puan.ToString();
+                    //lstKelime.MakeItemVisible(1);
+
                     st.Reset();
                 }
             }
@@ -146,17 +150,18 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
         {
             try
             {
-                XtraOpenFileDialog dosya = new XtraOpenFileDialog();
                 dosya.Filter = "Excel Dosyası |*.xls;*.xlsx";
                 dosya.Title = "Excel Dosyası Seçiniz.";
                 dosya.FilterIndex = 2;
                 dosya.RestoreDirectory = true;
                 dosya.ShowDialog();
-
-                kelimeayarlari = new KelimeAyarlari(dosya.FileName);
-                if (kelimeayarlari != null) XtraMessageBox.Show("Veriler Başarıyla Yüklendi", "Bilgilendirme", MessageBoxButtons.OK);
-                else XtraMessageBox.Show("Veri Yükleme Hatası!", "Bilgilendirme", MessageBoxButtons.OK);
-
+                if (dosya.FileName != "")
+                {
+                    kelimeayarlari = new KelimeAyarlari(dosya.FileName);
+                    if (kelimeayarlari != null) XtraMessageBox.Show("Veriler Başarıyla Yüklendi", "Bilgilendirme", MessageBoxButtons.OK);
+                    else XtraMessageBox.Show("Veri Yükleme Hatası!", "Bilgilendirme", MessageBoxButtons.OK);
+                }
+                else XtraMessageBox.Show("Dosya Seçilmedi!", "Bilgilendirme", MessageBoxButtons.OK);
             }
             catch (Exception)
             {

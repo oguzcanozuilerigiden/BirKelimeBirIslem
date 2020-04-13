@@ -79,6 +79,12 @@
     <Compile Include="Classes\Islem\Cozum.cs" />
     <Compile Include="Classes\Kelime\KelimeAra.cs" />
     <Compile Include="Classes\Kelime\KelimeAyarlari.cs" />
+    <Compile Include="Forms\Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="UserControls\Controls\MyNumericTextEdit.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Forms\Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +182,8 @@
   <ItemGroup>
     <Content Include="Images\backgroung.jpg" />
     <Content Include="Images\logo.jpg" />
+    <None Include="Resources\gaugestylehalfcircular_32x32.png" />
+    <None Include="Resources\gaugestylehalfcircular_16x16.png" />
     <None Include="Resources\exporttoxls_32x323.png" />
     <None Include="Resources\exporttoxls_16x163.png" />
     <None Include="Resources\exporttoxls_32x322.png" />

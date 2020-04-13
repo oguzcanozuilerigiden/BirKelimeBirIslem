@@ -11,6 +11,8 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
         #region Properties
         private List<int> harfmiktar { get; set; }
 
+        public int puan;
+
         private int max { get; set; }
 
         internal List<Kelime_Anlam> bulunankelimeler { get; private set; }
@@ -74,39 +76,47 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
             {
                 sb.AppendLine(item.Kelime + " --> " + item.Anlam);
             }
-
-            string puan;
+            string ifade;
             switch (max)
-            {
+            {                
                 case 9:
-                    puan = "Alınan Puan: 15" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 15;
+                    ifade = "Alınan Puan: 15" + Environment.NewLine +"( "+ max + " Harf Eşleşti.)";
                     break;
                 case 8:
-                    puan = "Alınan Puan: 11" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 11;
+                    ifade = "Alınan Puan: 11" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 case 7:
-                    puan = "Alınan Puan: 9" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 9;
+                    ifade = "Alınan Puan: 9" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 case 6:
-                    puan = "Alınan Puan: 7" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 7;
+                    ifade = "Alınan Puan: 7" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 case 5:
-                    puan = "Alınan Puan: 5" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 5;
+                    ifade = "Alınan Puan: 5" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 case 4:
-                    puan = "Alınan Puan: 4" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 4;
+                    ifade = "Alınan Puan: 4" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 case 3:
-                    puan = "Alınan Puan: 3" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 3;
+                    ifade = "Alınan Puan: 3" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 case 2:
-                    puan = "Alınan Puan: 1" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 1;
+                    ifade = "Alınan Puan: 1" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
                 default:
-                    puan = "Alınan Puan: 0" + Environment.NewLine + max + " Harf Eşleşti.)";
+                    puan = 0;
+                    ifade = "Alınan Puan: 0" + Environment.NewLine + "( " + max + " Harf Eşleşti.)";
                     break;
             }
-            sb.Append(puan);
+            sb.Append(ifade);
             return sb.ToString();
         } 
         #endregion

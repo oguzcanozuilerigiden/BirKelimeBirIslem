@@ -16,7 +16,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             Properties.Appearance.ForeColor = Color.DarkOrange;
             Properties.Appearance.TextOptions.HAlignment = HorzAlignment.Center;
             Properties.Mask.MaskType = MaskType.Regular;
-            Properties.Mask.EditMask = "[A-Z]";
+            Properties.Mask.EditMask = "[A-ZÇĞİÖŞÜ]";
             Properties.Mask.AutoComplete = AutoCompleteType.None;//Boş karaktere 0 konmasını engeller
             Properties.NullValuePrompt = "A";
             Properties.NullText = "A";

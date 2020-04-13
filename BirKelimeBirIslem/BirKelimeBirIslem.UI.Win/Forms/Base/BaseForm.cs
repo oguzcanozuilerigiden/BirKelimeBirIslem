@@ -25,7 +25,8 @@ namespace BirKelimeBirIslem.UI.Win.Forms.Base
 
         private void btnCikis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+            this.Close();
         }
     }
 }

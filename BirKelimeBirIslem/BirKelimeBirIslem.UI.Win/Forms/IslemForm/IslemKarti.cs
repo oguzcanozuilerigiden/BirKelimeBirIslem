@@ -15,7 +15,8 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
             tglGiris.ItemClick += TglGiris_ItemClick;
         }
        
-        OyunAyarlari oyunayarlari;
+        OyunAyarlari oyunayarlari =new OyunAyarlari();
+
         private DateTime _startTime = DateTime.Now;
         private TimeSpan _timeSpan = new TimeSpan(0, 1, 0);  // 1 minute 10 seconds as total time
         System.Diagnostics.Stopwatch st = new System.Diagnostics.Stopwatch();
@@ -87,6 +88,8 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
                 st.Stop();
                 lblSure.Caption = st.Elapsed.Seconds + ":" + st.Elapsed.Milliseconds;
                 lstIslemler.Items.Add(ifd.ToString());
+                lblPuan.Caption = ifd.puan.ToString();
+
                 st.Reset();
             }
             catch (Exception)
@@ -101,6 +104,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
             try
             {
                 oyunayarlari = new OyunAyarlari();
+
                 lstIslemler.Items.Clear();
 
                 txtSayi1.Text = oyunayarlari.TekBasamakli[0].ToString();

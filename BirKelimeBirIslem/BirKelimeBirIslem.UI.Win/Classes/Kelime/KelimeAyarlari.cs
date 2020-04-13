@@ -36,7 +36,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
         #region Functions        
         public List<Kelime_Anlam> Sorgu1()
         {
-            var list = from a in ConxObject.UrlConnexion.Worksheet<Kelime_Anlam>("Kelime_Anlam")
+            var list = from a in ConxObject.UrlConnexion.Worksheet<Kelime_Anlam>("Kelime_Anlam2")
                        select a;
             return list.ToList();
         }

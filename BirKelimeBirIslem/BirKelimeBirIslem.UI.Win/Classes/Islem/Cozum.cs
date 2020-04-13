@@ -16,6 +16,8 @@ namespace BirKelimeBirIslem.UI.Win.Classes
 
         private int enYakin = int.MaxValue;
 
+        public int puan;
+
         #endregion Properties
 
         #region Constructor
@@ -93,44 +95,55 @@ namespace BirKelimeBirIslem.UI.Win.Classes
             sb.Append(this.Hesapla.ToString());
 
             int fark = Math.Abs(this.Hesapla.DegerHesapla - Hedef2);
-            string puan;
+            string ifade;
             switch (fark)
             {
                 case 0:
-                    puan = "Alınan Puan: 10" + Environment.NewLine + "(Tam Sonuç)";
+                    puan = 10;
+                    ifade = "Alınan Puan: 10" + Environment.NewLine + "(Tam Sonuç)";
                     break;
                 case 1:
-                    puan = "Alınan Puan: 9" + Environment.NewLine + "(Bir Yaklaşık Sonuç)";
+                    puan = 9;
+                    ifade = "Alınan Puan: 9" + Environment.NewLine + "(Bir Yaklaşık Sonuç)";
                     break;
                 case 2:
-                    puan = "Alınan Puan: 8" + Environment.NewLine + "(İki Yaklaşık Sonuç)";
+                    puan = 8;
+                    ifade = "Alınan Puan: 8" + Environment.NewLine + "(İki Yaklaşık Sonuç)";
                     break;
                 case 3:
-                    puan = "Alınan Puan: 7" + Environment.NewLine + "(Üç Yaklaşık Sonuç)";
+                    puan = 7;
+                    ifade = "Alınan Puan: 7" + Environment.NewLine + "(Üç Yaklaşık Sonuç)";
                     break;
                 case 4:
-                    puan = "Alınan Puan: 6" + Environment.NewLine + "(Dört Yaklaşık Sonuç)";
+                    puan = 6;
+                    ifade = "Alınan Puan: 6" + Environment.NewLine + "(Dört Yaklaşık Sonuç)";
                     break;
                 case 5:
-                    puan = "Alınan Puan: 5" + Environment.NewLine + "(Beş Yaklaşık Sonuç)";
+                    puan = 5;
+                    ifade = "Alınan Puan: 5" + Environment.NewLine + "(Beş Yaklaşık Sonuç)";
                     break;
                 case 6:
-                    puan = "Alınan Puan: 4" + Environment.NewLine + "(Altı Yaklaşık Sonuç)";
+                    puan = 4;
+                    ifade = "Alınan Puan: 4" + Environment.NewLine + "(Altı Yaklaşık Sonuç)";
                     break;
                 case 7:
-                    puan = "Alınan Puan: 3" + Environment.NewLine + "(Yedi Yaklaşık Sonuç)";
+                    puan = 3;
+                    ifade = "Alınan Puan: 3" + Environment.NewLine + "(Yedi Yaklaşık Sonuç)";
                     break;
                 case 8:
-                    puan = "Alınan Puan: 2" + Environment.NewLine + "(Sekiz Yaklaşık Sonuç)";
+                    puan = 2;
+                    ifade = "Alınan Puan: 2" + Environment.NewLine + "(Sekiz Yaklaşık Sonuç)";
                     break;
                 case 9:
-                    puan = "Alınan Puan: 1" + Environment.NewLine + "(Dokuz Yaklaşık Sonuç)";
+                    puan = 1;
+                    ifade = "Alınan Puan: 1" + Environment.NewLine + "(Dokuz Yaklaşık Sonuç)";
                     break;
                 default:
-                    puan = "Puan Alamadınız!" + Environment.NewLine + "Çözüm Bulunamadı";
+                    puan = 0;
+                    ifade = "Puan Alamadınız!" + Environment.NewLine + "Çözüm Bulunamadı";
                     break;
             }
-            sb.Append(Environment.NewLine + puan);
+            sb.Append(Environment.NewLine + ifade);
 
             return sb.ToString();
         }

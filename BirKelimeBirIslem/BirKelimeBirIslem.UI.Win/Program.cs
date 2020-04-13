@@ -16,7 +16,9 @@ namespace BirKelimeBirIslem.UI.Win
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BirKelimeBirIslem.UI.Win.Forms.KelimeForm.KelimeKarti());
+            Application.Run(new BirKelimeBirIslem.UI.Win.Forms.Anasayfa());
+
+            //Application.Run(new BirKelimeBirIslem.UI.Win.Forms.KelimeForm.KelimeKarti());
             //Application.Run(new BirKelimeBirIslem.UI.Win.Forms.IslemForm.IslemKarti());
 
         }

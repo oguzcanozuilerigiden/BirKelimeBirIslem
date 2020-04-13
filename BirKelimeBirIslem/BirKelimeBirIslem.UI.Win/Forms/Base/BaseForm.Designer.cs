@@ -69,15 +69,19 @@
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
             this.btnDosya = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.lblPuan = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonGalleryBarItem2 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemImageEdit3)).BeginInit();
@@ -125,9 +129,11 @@
             this.lblSure,
             this.barSubItem1,
             this.barStaticItem2,
-            this.btnDosya});
+            this.btnDosya,
+            this.barStaticItem1,
+            this.lblPuan});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 31;
+            this.ribbonControl.MaxItemId = 35;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
@@ -314,6 +320,54 @@
             superToolTip5.Items.Add(toolTipTitleItem10);
             this.btnDosya.SuperTip = superToolTip5;
             // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "Puan";
+            this.barStaticItem1.Id = 33;
+            this.barStaticItem1.ImageOptions.Image = global::BirKelimeBirIslem.UI.Win.Properties.Resources.gaugestylehalfcircular_16x16;
+            this.barStaticItem1.ImageOptions.LargeImage = global::BirKelimeBirIslem.UI.Win.Properties.Resources.gaugestylehalfcircular_32x32;
+            this.barStaticItem1.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.barStaticItem1.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barStaticItem1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.barStaticItem1.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barStaticItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.barStaticItem1.ItemAppearance.Normal.Options.UseFont = true;
+            this.barStaticItem1.ItemAppearance.Pressed.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.barStaticItem1.ItemAppearance.Pressed.Options.UseFont = true;
+            this.barStaticItem1.Name = "barStaticItem1";
+            this.barStaticItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // lblPuan
+            // 
+            this.lblPuan.Caption = "0";
+            this.lblPuan.Id = 34;
+            this.lblPuan.ItemAppearance.Disabled.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblPuan.ItemAppearance.Disabled.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.lblPuan.ItemAppearance.Disabled.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblPuan.ItemAppearance.Disabled.Options.UseBackColor = true;
+            this.lblPuan.ItemAppearance.Disabled.Options.UseFont = true;
+            this.lblPuan.ItemAppearance.Disabled.Options.UseForeColor = true;
+            this.lblPuan.ItemAppearance.Hovered.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblPuan.ItemAppearance.Hovered.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.lblPuan.ItemAppearance.Hovered.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblPuan.ItemAppearance.Hovered.Options.UseBackColor = true;
+            this.lblPuan.ItemAppearance.Hovered.Options.UseFont = true;
+            this.lblPuan.ItemAppearance.Hovered.Options.UseForeColor = true;
+            this.lblPuan.ItemAppearance.Normal.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblPuan.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.lblPuan.ItemAppearance.Normal.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblPuan.ItemAppearance.Normal.Options.UseBackColor = true;
+            this.lblPuan.ItemAppearance.Normal.Options.UseFont = true;
+            this.lblPuan.ItemAppearance.Normal.Options.UseForeColor = true;
+            this.lblPuan.ItemAppearance.Pressed.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblPuan.ItemAppearance.Pressed.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.lblPuan.ItemAppearance.Pressed.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblPuan.ItemAppearance.Pressed.Options.UseBackColor = true;
+            this.lblPuan.ItemAppearance.Pressed.Options.UseFont = true;
+            this.lblPuan.ItemAppearance.Pressed.Options.UseForeColor = true;
+            this.lblPuan.Name = "lblPuan";
+            this.lblPuan.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
             // ribbonPageCategory1
             // 
             this.ribbonPageCategory1.Name = "ribbonPageCategory1";
@@ -323,8 +377,10 @@
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
+            this.ribbonPageGroup2,
             this.ribbonPageGroup3,
-            this.ribbonPageGroup2});
+            this.ribbonPageGroup4,
+            this.ribbonPageGroup5});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "ribbonPage1";
             // 
@@ -333,9 +389,16 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btnOlustur);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnBasla);
             this.ribbonPageGroup1.ItemLinks.Add(this.tglGiris);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnDosya);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup2.ItemLinks.Add(this.barStaticItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.lblPuan);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
             // 
             // ribbonPageGroup3
             // 
@@ -345,12 +408,12 @@
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
-            // ribbonPageGroup2
+            // ribbonPageGroup4
             // 
-            this.ribbonPageGroup2.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnCikis);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
+            this.ribbonPageGroup4.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnCikis);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
             // 
             // ribbonStatusBar1
             // 
@@ -371,6 +434,12 @@
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnDosya);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPageGroup5.Text = "ribbonPageGroup5";
             // 
             // BaseForm
             // 
@@ -405,12 +474,10 @@
 
         #endregion
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem1;
         private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem2;
@@ -426,7 +493,13 @@
         protected DevExpress.XtraBars.BarStaticItem lblSure;
         protected DevExpress.XtraBars.BarButtonItem btnCikis;
         protected DevExpress.XtraBars.BarStaticItem barStaticItem2;
-        protected DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
-        internal DevExpress.XtraBars.BarButtonItem btnDosya;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        protected DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        protected DevExpress.XtraBars.BarStaticItem lblPuan;
+        public DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
+        protected DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        protected DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        protected DevExpress.XtraBars.BarButtonItem btnDosya;
+        protected DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
     }
 }

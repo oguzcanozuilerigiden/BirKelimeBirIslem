@@ -90,6 +90,10 @@
             this.ribbonControl.SearchEditItem.UseEditorPadding = false;
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.Visible = false;
+            // 
             // myDataLayoutControl1
             // 
             this.myDataLayoutControl1.BackColor = System.Drawing.Color.Transparent;
@@ -292,6 +296,7 @@
             this.lstIslemler.Appearance.Options.UseForeColor = true;
             this.lstIslemler.Appearance.Options.UseTextOptions = true;
             this.lstIslemler.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lstIslemler.HorizontalScrollbar = true;
             this.lstIslemler.ItemAutoHeight = true;
             this.lstIslemler.Location = new System.Drawing.Point(12, 62);
             this.lstIslemler.Name = "lstIslemler";

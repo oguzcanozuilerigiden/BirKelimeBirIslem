@@ -15,6 +15,7 @@ namespace BirKelimeBirIslem.UI.Win.UserControls.Controls
             //Appearance.BackColor = Color.Maroon;
             Appearance.TextOptions.HAlignment = HorzAlignment.Near;
             ItemAutoHeight = true;
+            HorizontalScrollbar = true;
         }
     }
 }
