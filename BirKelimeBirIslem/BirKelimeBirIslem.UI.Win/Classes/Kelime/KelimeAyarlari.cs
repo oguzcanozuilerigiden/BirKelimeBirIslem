@@ -10,8 +10,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
     public class KelimeAyarlari
     {
         #region Properties
-        private ConnExcel ConxObject { get; set; }
-
+       
         Random rnd = new Random();
 
         KelimeAra ara { get; set; }
@@ -26,17 +25,17 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 
         public KelimeAyarlari(string _path)
         {
-            string pathToExcelFile = _path;
-            this.ConxObject = new ConnExcel(pathToExcelFile);
+            var excel = ConnExcel.Conn();
+            excel.Yol(_path);
             this.kelimelistesi = new List<Kelime_Anlam>();
-            kelimelistesi = Sorgu1();
+            kelimelistesi = Sorgu1(excel);
         }
         #endregion
 
         #region Functions        
-        public List<Kelime_Anlam> Sorgu1()
+        public List<Kelime_Anlam> Sorgu1(ConnExcel _excel)
         {
-            var list = from a in ConxObject.UrlConnexion.Worksheet<Kelime_Anlam>("Kelime_Anlam2")
+            var list = from a in _excel.url.Worksheet<Kelime_Anlam>("Kelime_Anlam2")
                        select a;
             return list.ToList();
         }
