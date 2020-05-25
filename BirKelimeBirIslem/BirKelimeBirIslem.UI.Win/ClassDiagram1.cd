@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BirKelimeBirIslem.UI.Win.Classes.Cozum" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAIABAAAUAAAAAAgQgAACEAAA=</HashCode>
+      <FileName>Classes\Islem\Cozum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Classes.Hesapla" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQAAAAAAACAAEAAAAAAAAAAAAAAUAAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\Islem\Hesapla.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Classes.OyunAyarlari" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAABABAQBAAEAABAAAAAAAAAAAACAAACAAAAAAA=</HashCode>
+      <FileName>Classes\Islem\OyunAyarlari.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Classes.Islem.Enums.Enum" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Islem\Enums\Enum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Classes.Kelime.KelimeAra" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACAAAAAAAEAAAAAQgAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Classes\Kelime\KelimeAra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Classes.Kelime.KelimeAyarlari" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIEAAAAAIAQAAAMAAAAAAAAgAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Classes\Kelime\KelimeAyarlari.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Forms.Anasayfa" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAhACCAAAAAAACAAAACAAAACAAAAAgBAAAAAAA=</HashCode>
+      <FileName>Forms\Anasayfa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Forms.Base.BaseForm" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAQAA/CAAAEEBAACkEoACCwgAAICAEEAAAAIAEEA=</HashCode>
+      <FileName>Forms\Base\BaseForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Forms.IslemForm.IslemKarti" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAAICAAACAgAASFAEICAKAAQCAABJEIgACAAAA=</HashCode>
+      <FileName>Forms\IslemForm\IslemKarti.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Forms.KelimeForm.KelimeKarti" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQBAQAAAYiAgACAgAACBAEIiEAgEQCAAEAACgABACIA=</HashCode>
+      <FileName>Forms\KelimeForm\KelimeKarti.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Program" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Properties.Resources" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCQASIQAAAAASAACABEIAAARAQKAAAAAAEgAAABIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.Properties.Settings" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyButtonEdit" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyButtonEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyCharTextEdit" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyCharTextEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyDataLayoutControl" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAABAAA=</HashCode>
+      <FileName>UserControls\Controls\MyDataLayoutControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyLayoutControlImplementor" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyDataLayoutControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyLabelEdit" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyLabelEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyListBoxControl" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyListBoxControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyPictureEdit" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyPictureEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MySimpleButton" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MySimpleButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.Controls.MyToggleSwitch" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyToggleSwitch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.UI.Win.UserControls.MyNumericTextEdit" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>UserControls\Controls\MyNumericTextEdit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirKelimeBirIslem.Model.Entities.Base.BaseEntity" Collapsed="true">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BirKelimeBirIslem.Model.Entities.Kelime_Anlam" Collapsed="true">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BirKelimeBirIslem.Dal.Context.ConnExcel" Collapsed="true">
+    <Position X="11.25" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
