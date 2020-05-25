@@ -26,6 +26,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.KelimeForm
 
         private bool VeriKontrol()
         {
+            //testcase ile kontrol yapılıyor
             if (kelimeayarlari == null)
             {
                 XtraMessageBox.Show("Veri Seçimi Yapınız!", "Bilgilendirme", MessageBoxButtons.OK);

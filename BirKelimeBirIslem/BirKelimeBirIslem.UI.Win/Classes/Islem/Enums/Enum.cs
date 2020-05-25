@@ -4,6 +4,7 @@
     {
         public enum Islem_Isaret
         {
+            //Dörtişlem bilgisini saklar
             Ekle,
             Cikar,
             Carp,

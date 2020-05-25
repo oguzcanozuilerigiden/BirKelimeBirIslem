@@ -25,6 +25,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 
         public KelimeAyarlari(string _path)
         {
+            //excel üzerinden gelen datalar değişkene aktarılıyor
             var excel = ConnExcel.Conn();
             excel.Yol(_path);
             this.kelimelistesi = new List<Kelime_Anlam>();
@@ -35,6 +36,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
         #region Functions        
         public List<Kelime_Anlam> Sorgu1(ConnExcel _excel)
         {
+            //excel çalışma sayfayı okunup datalar list e aktarılıyor 
             var list = from a in _excel.url.Worksheet<Kelime_Anlam>("Kelime_Anlam2")
                        select a;
             return list.ToList();
@@ -42,6 +44,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 
         public KelimeAra Basla()
         {           
+            //çözüm için KelimeAra sınıfı initialize eediliyor ve veriler gönderiliyor
             this.ara = new KelimeAra(kelimelistesi,Harfler);            
             return this.ara;
         }
@@ -54,6 +57,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes.Kelime
 
         private List<string> HarflerOlustur()
         {
+            //random olarak harf listesi oluşturuluyor
             List<string> karakter = new List<string>() { "A", "B", "C","Ç", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z" };
 
             List<string> harfler = new List<string>();

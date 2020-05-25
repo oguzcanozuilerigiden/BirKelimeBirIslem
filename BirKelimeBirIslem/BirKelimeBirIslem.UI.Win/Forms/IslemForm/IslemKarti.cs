@@ -22,6 +22,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
 
         private void VeriKontrol()
         {
+            //Testcase uygulanıyor
             if (string.IsNullOrEmpty(txtSayi1.Text)) txtSayi1.Text = "1";
             if (string.IsNullOrEmpty(txtSayi2.Text)) txtSayi2.Text = "1";
             if (string.IsNullOrEmpty(txtSayi3.Text)) txtSayi3.Text = "1";
@@ -40,6 +41,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
         {
             try
             {
+                //random-user oyun ayarı yapılıyor
                 if (tglGiris.Checked)
                 {
                     txtSayi1.ReadOnly = false;
@@ -102,6 +104,7 @@ namespace BirKelimeBirIslem.UI.Win.Forms.IslemForm
         {
             try
             {
+                //random sayılar üretiliyor
                 oyunayarlari = new OyunAyarlari();
 
                 lstIslemler.Items.Clear();

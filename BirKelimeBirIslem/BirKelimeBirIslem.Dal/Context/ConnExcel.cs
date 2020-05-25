@@ -5,18 +5,7 @@ namespace BirKelimeBirIslem.Dal.Context
 {
     public class ConnExcel
     {
-        #region Sorulacak
-        //SOR
-        //private ExcelQueryFactory _urlConnexion;
-        // public ExcelQueryFactory UrlConnexion { get; private set; }
-        //{
-        //    get
-        //    {
-        //        return _urlConnexion;
-        //    }
-        //} 
-        #endregion
-
+        //Veri Tabanı(Excel) bağlantısı yapmaya yarar
         #region Properties
 
         private static ConnExcel connexcel;
@@ -36,6 +25,8 @@ namespace BirKelimeBirIslem.Dal.Context
         #region Functions
         public static ConnExcel Conn()
         {
+            //Singelton tasarım desenine göre çalışır
+            //eğer conn oluşmuş ise tekrar oluşturmaz
             lock (_lockobject)
             {
                 if (connexcel == null) connexcel = new ConnExcel();

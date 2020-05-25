@@ -14,7 +14,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         
         public int DegerHesapla
         {
-            
+            //elde eilen işlem ve çözüm verileri 4 işleme(enum) tabi tutulup yaklaşıklık hesaplanıyor
             get
             {                
                 int deger = SiradakiSayi[0];
@@ -44,12 +44,14 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #region Constructors
         public Hesapla(int _siradaki_sayi)
         {
+            //listede gelen veriler ve işaretler değişkenlere aktarılıyor.
             this.SiradakiSayi = new List<int>() { _siradaki_sayi };
             this.Operatorler = new List<Islem_Isaret>();
         }
 
         public Hesapla(Hesapla _denklembaslangici, Islem_Isaret _islem, int _siradakisayi)
         {
+            //listedeki veriler ayrıştırılıyor
             this.SiradakiSayi = new List<int>((int[])_denklembaslangici.SiradakiSayi.ToArray().Clone());
             this.SiradakiSayi.Add(_siradakisayi);
             this.Operatorler = new List<Islem_Isaret>((Islem_Isaret[])_denklembaslangici.Operatorler.ToArray().Clone());
@@ -60,6 +62,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #region ToString
         public override string ToString()
         {
+            //en yakın çözüm string olarak return ediliyor
             StringBuilder sb = new StringBuilder();
             int siradaki = SiradakiSayi[0];
             int _siradakideger = -1;
@@ -75,6 +78,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
 
         private string YeniIslemSatiriOlustur(int _simdikisayi, int _kartsirasi, ref int _siradakideger)
         {
+            //veri ve işaret hesaplamaya gönderiliyor
             int siradaki_sayi = SiradakiSayi[_kartsirasi];
             Islem_Isaret islem = (Islem_Isaret)Operatorler[_kartsirasi - 1];
             string islemsembol = IslemSembolEkle(islem);
@@ -84,6 +88,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
 
         private string IslemSembolEkle(Islem_Isaret Operator)
         {
+            //enum lar işlem işaretlerine dönüşüyor
             switch (Operator)
             {
                 case Islem_Isaret.Ekle:
@@ -101,6 +106,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
 
         private int YeniDegerHesapla(int _sayi1, int _sayi2, Islem_Isaret _islem)
         {
+            //sıradaki 2 sayı arasındaki işlem sonucu dönüyor
             switch (_islem)
             {
                 case Islem_Isaret.Ekle:

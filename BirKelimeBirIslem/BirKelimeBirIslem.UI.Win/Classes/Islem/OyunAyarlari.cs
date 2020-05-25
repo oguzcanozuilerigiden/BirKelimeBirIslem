@@ -22,6 +22,7 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #region Constructor
         public OyunAyarlari()
         {
+            //İşlem oyunu için gerekli veriler constructor metodunda dolduruluyor
             rnd = new Random();
             if (TekBasamakli != null) TekBasamakli.Clear();
             IkiBasamakli = IkiBasamakliOlustur();
@@ -34,13 +35,14 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #region Functions
         public Cozum Basla()
         {
+            //Çözüm class ı initialize edilerek arama işlemi tetikleniyor
             this.Cozum = new Cozum(HedefSayi, TekBasamakli, IkiBasamakli);
             return Cozum;
         }
         #endregion
 
         #region SayılarıOlustur
-
+        // Random olarak sayılar oluşturuluyor
         private int IkiBasamakliOlustur()
         {
             List<int> sayilar = new List<int>() { 10, 20, 30, 40, 50, 60, 70, 80, 90 };
@@ -65,6 +67,8 @@ namespace BirKelimeBirIslem.UI.Win.Classes
         #endregion PlayGame
 
         #region ToString
+
+        //sonuç verisi string ezilerek geriye return ediliyor
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
